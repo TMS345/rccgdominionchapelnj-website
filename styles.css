@@ -206,6 +206,11 @@ footer
   margin: inherit;
 }
 
+footer h2
+{
+  color: white;
+}
+
 section 
 {
   margin: 0px 0px;
@@ -215,23 +220,28 @@ section
   height: auto;
 }
 
-#nav_copyright img
+#nav_copyright nav img
 {
-  max-width: 35%;
-  max-height: 20%;
+  width: 30px;
+  height: 30px;
+  max-width: 10%;
+  max-height: 10%;
   background-color: transparent;
   box-shadow: none;
-  margin-right: 25px;
+  border: none;
+  margin-right: 10px;
+  display: inherit;
 }
 
 #nav_copyright nav
 {
   border: none;
-  display: inherit;
+  display: table;
   background-color: transparent;
   text-align: center;
   margin: 5px;
   margin-bottom: 0px;
+  color: white;
 }
 
 #nav_copyright nav ul
@@ -239,11 +249,9 @@ section
   display: inline-flex;
   text-align: center;
   align-items: inherit;
-  background-color: pink;
-  margin-bottom: 0px;
-  margin-top: 0px;
-  margin-right: 50px;
-  margin-left: 25px;
+  background-color: transparent;
+  margin-right: 190px;
+  padding: 0;
 }
 
 #nav_copyright nav ul li
@@ -251,12 +259,14 @@ section
   margin-top: 0px;
   margin-bottom: 0px;
   display: flex;
+  margin-right: 0px;
 }
 
 #nav_copyright nav ul li a
 {
   display: inline-flex;
-  margin: 5px;
+  margin: 10px;
+  color: white;
 }
 
 #nav_copyright nav ul li a:hover
@@ -268,15 +278,23 @@ section
   color: hsl(40, 60%, 65%);
 }
 
-#nav_copyright div 
+#nav_copyright nav div 
 {
   text-align: left;
   font-style: italic;
   font-size: 15px;
   color: inherit;
-  display: ruby;
-  background-color: inherit;
-  margin-right: 0px;
+  display: inline-table;
+  background-color: transparent;
+  margin-right: 75px;
+  margin-left: 25px;
+  padding: 0;
+}
+
+#contact-section
+{
+  box-sizing: border-box;
+  width: 75%;
 }
 
 #contact
@@ -287,8 +305,10 @@ section
   align-content: center;
   text-align: center;
   font-family: "Lato", sans-serif;
-  display: contents;
+  display: flex;
   background-color: transparent;
+  box-shadow: transparent;
+  border: none;
 }
 
 #contact h3
@@ -316,6 +336,7 @@ section
 {
   margin-top: 0px;
   padding: 5px;
+  margin-bottom: 15px;
 }
 
 #contact h3
@@ -350,25 +371,27 @@ section
 
 .line
 {
-  border-top: 2px solid;
+  border-top: 0px transparent;
   margin: 20px 0;
   padding: 0;
+  box-shadow: transparent;
 }
 
 .google-map
 {
-  padding: 50%;
   position: relative;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
 }
 
 .google-map iframe 
 {
-  height: 30%;
-  width: 40%;
-  left: 0;
-  top: 0;
-  position: absolute;
+  max-height: 50%;
+  max-width: 40%;
   background-color: transparent;
+  align-content: center;
 }
 
 /* Might add form in the future
@@ -410,7 +433,7 @@ head
   background-color: white;
 }
 
-.html-site
+html
 {
   width: 100%;
   max-width: 100%;
@@ -647,12 +670,22 @@ body h1, h2, h3, p
   transform: scale(1.1);
 }
 
-.services-grid 
+#services
+{
+  max-width: 100%;
+  max-height: 100%;
+  background-color: transparent;
+}
 
-{  display: grid;
+.services-grid 
+{  
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 50px;
   height: auto;
+  flex-wrap: wrap;
+  max-height: 100%;
+  max-width: 100%;
 }
 
 .service 
@@ -662,6 +695,8 @@ body h1, h2, h3, p
   border-radius: 10px;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
   text-align: center;
+  box-sizing: border-box;
+  width: auto;
 }
 
 .service h3
@@ -669,6 +704,7 @@ body h1, h2, h3, p
   font-style: normal;
   padding-top: 20px;
   font-size: 17px;
+  width: auto;
 }
 
 .service p
@@ -676,6 +712,7 @@ body h1, h2, h3, p
   font-style: normal;
   padding-top: 0px;
   font-size: 13px;
+  width: auto;
 }
 
 .service em
@@ -696,6 +733,13 @@ body h1, h2, h3, p
   padding-bottom: 0px;
   padding-top: 0px;
   display: inline-flex;
+}
+
+html
+{
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 @font-face 
