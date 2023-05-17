@@ -32,6 +32,19 @@
   margin-bottom: 0px;
 }
 
+#about 
+{
+  width: 100%;
+  height: 100%;
+  display: initial;
+}
+
+#about h2
+{
+  font-size: 46px;
+  color: indianred;
+}
+
 div img 
 {
   max-width: 100%;
@@ -53,13 +66,13 @@ a:hover
   text-decoration: blink;
 }
 
-header nav 
+/*header nav 
 {
-  height: auto;
+  height: 100%;
   width: auto;
   padding: 10px 10px;
   border: solid;
-  overflow: auto;
+  overflow: hidden;
   margin-top: 15px;
   align-items: center;
   text-align: center;
@@ -98,18 +111,16 @@ header nav a:hover
 {
   background-color: lightgrey;
   border-radius: 10px;
-  border: 1px transparent #000; /* Set border properties */
+  border: 1px transparent #000;
   transition: border-radius 0.0s ease-in-out;
 }
 
 header 
 {
-  /*
   background-image: url("banner.png");
   background-size: 1000px 500px;
   background-repeat: no-repeat;
-  */
-  background-color: white;
+  background-color: rgb(255, 255, 255);
 }
 
 header h1, h3
@@ -117,6 +128,22 @@ header h1, h3
   margin-top: 0px;
   margin-bottom: 0;
 }
+
+header
+{
+  text-align: center;
+}
+
+header img
+{
+  width: 15%;
+  height: 15%;
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+}
+
+*/
 
 ul 
 {
@@ -126,18 +153,21 @@ ul
 body 
 {
   background-color: whitesmoke;
-  font-family: "Poppins", sans-serif;
+  font-family: "Lora", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   max-width: 100%;
   max-height: 100%;
+  text-align: center;
+  align-items: center;
 }
 
 h1, h2, h3 
 {
-  font-family: "Poppins", sans-serif;
+  font-family: "Lora", sans-serif;
   font-weight: bold;
   margin-bottom: 0px;
+  font-size: 46px;
 }
 
 h1 
@@ -445,7 +475,7 @@ html
   margin-bottom: 0px;
   align-items: center;
   align-content: center;
-  overflow: scroll;
+  overflow: visible;
   background-color: transparent;
 }
 
@@ -500,6 +530,17 @@ body h1, h2, h3, p
   text-align: center;
 }
 
+#pastors
+{
+  background-color: transparent;
+}
+
+#pastors h2
+{
+  color: darkkhaki;
+  font-size: 46px;
+}
+
 #pastors h3, h4
 {
   font-style: normal;
@@ -540,7 +581,7 @@ body h1, h2, h3, p
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 0px;
   height: auto;
-  background-color: darkkhaki;
+  background-color: transparent;
 }
 
 .pastor
@@ -615,6 +656,7 @@ body h1, h2, h3, p
 .no-js #loader-wrapper {
     display: none;
 }
+
 .no-js h1 {
     color: #222222;
 }
@@ -672,9 +714,15 @@ body h1, h2, h3, p
 
 #services
 {
-  max-width: 100%;
-  max-height: 100%;
+  width: auto;
+  height: 100%;
   background-color: transparent;
+}
+
+#services h2
+{
+  font-size: 46px;
+  color: ;
 }
 
 .services-grid 
@@ -682,10 +730,9 @@ body h1, h2, h3, p
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 50px;
-  height: auto;
   flex-wrap: wrap;
-  max-height: 100%;
-  max-width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 .service 
@@ -697,6 +744,7 @@ body h1, h2, h3, p
   text-align: center;
   box-sizing: border-box;
   width: auto;
+  height: auto;
 }
 
 .service h3
@@ -735,15 +783,54 @@ body h1, h2, h3, p
   display: inline-flex;
 }
 
-html
+.navbar-brand 
 {
-  width: 100%;
-  margin: 0;
-  padding: 0;
+  margin-right: 0px;
+  background-color: transparent;
+}
+
+.navbar-nav 
+{
+  margin: 0 30px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav .nav-item 
+{
+  margin: 10px;
+  text-align: center;
+}
+
+.navbar-nav .nav-link 
+{
+  color: #333;
+}
+
+.navbar-nav .nav-link:hover, .navbar-nav .nav-link:focus 
+{
+  color: #000;
+}
+
+.navbar-icons 
+{
+  display: flex;
+  align-items: center;
+}
+
+.navbar-icons .icon 
+{
+  margin-left: 15px;
 }
 
 @font-face 
 {
   font-family: 'Arvo';
   src: url('Arvo-Regular.ttf') format('truetype');
+}
+
+@font-face 
+{
+  font-family: 'Lora';
+  src: url('Lora-VariableFont_wght.ttf') format('truetype');
 }
