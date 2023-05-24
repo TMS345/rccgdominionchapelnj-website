@@ -1,13 +1,15 @@
-const loadingScreen = document.querySelector ('.loading-screen');
-
-function showLoadingScreen () 
+document.addEventListener("loading-screen", function() 
 {
-  loadingScreen.classList.remove ('hidden');
-}
+  hideLoadingScreen ();
+});
 
-function hideLoadingScreen () 
+window.addEventListener ("load", function () 
 {
-  loadingScreen.classList.add ('hidden');
-}
+  hideLoadingScreen ();
+});
 
-window.addEventListener ('hidden', showLoadingScreen);
+function hideLoadingScreen ()
+{
+  var loadingScreen = document.getElementById ("loading-screen");
+  loadingScreen.style.display = "none";
+}

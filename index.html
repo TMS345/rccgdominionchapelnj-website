@@ -1,30 +1,28 @@
 <!DOCTYPE html>
 <!--
+Fix livesteam section
 Fix nav section with boostrap
-Add actual link to bible study section for people to join
-Stretch content of page to entire screen
 Update espanol section
 Update all other footer sections when it is fixed
 -->
 <html lang="en" class="html-site">
   <head>
-	<!--div class="loading-screen">
-	  <div class="spinner"></div>
-	</div-->
     <meta charset="UTF-8">
     <title>Homepage - RCCG Dominion Chapel Galloway, NJ</title>
     <link rel="stylesheet" href="styles.css">
 	<link rel="icon" type="image/png" href="rccg_logo.png">
 	  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-	<!--link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Poppins"-->
+	  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Poppins">
 	<script src="church-website.js"></script>
 	<body onload="current_year.js">
+	<script src="loading-screen.js"></script>
   </head>
   <body>
+	<div id="loading-screen">Loading...</div>
 	<header>
-	  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+	  <nav class="navbar navbar-expand-lg custom-navbar">
 			<img src="rccg_logo.png" alt="Logo" width="50" height="50" class="d-inline-block align-top">
-			<a href="/" class="navbar-brand">RCCG Dominion Chapel Galloway, NJ</a>
+			<a href="index.html" class="navbar-brand">RCCG Dominion Chapel Galloway, NJ</a>
 
 			<div class="collapse navbar-collapse" id="navbarNav">
 			  <ul class="navbar-nav">
@@ -41,7 +39,7 @@ Update all other footer sections when it is fixed
 				  <a class="nav-link" href="giving.html">Giving</a>
 				</li>
 				<li class="nav-item">
-				  <a class="nav-link" href="index-es.html">Español</a>
+				  <a class="nav-link" href="#">Español - Coming Soon</a>
 				</li>
 				<li class="nav-item">
 				  <a class="nav-link" href="#contact">Contact</a>
@@ -54,35 +52,18 @@ Update all other footer sections when it is fixed
 				<i class="fas fa-search"></i>
 			  </a>
 			  <a href="#" class="icon">
-				<i class="far fa-envelope"></i>
+				<i class="fab fa-youtube"></i>
 			  </a>
 			  <a href="#" class="icon">
-				<i class="fas fa-bell"></i>
+				<i class="fab fa-facebook"></i>
 			  </a>
 			</div>
 			
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/js/all.min.js"></script>
-
 			<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 			<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 		</nav>
-		<!--div>
-		  <img src="rccg_logo.png">
-		  <h1>DOMINION CHAPEL</h1>
-		  <h3>"Jesus Christ the same yesterday, and to day, and for ever."</h3>
-		  <h3>Hebrews 13:8</h3>
-		</div>
-		<nav>
-			<ul>
-			  <li><a href="index.html">Home</a></li>
-			  <li><a href="#about">About Us</a></li>
-			  <li><a href="giving.html">Giving</a></li>
-			  <li><a href="#services">Our Services</a></li>
-			  <li><a href="index-es.html">Español</a></li>
-			  <li><a href="#contact">Contact Us</a></li>
-			</ul>
-		</nav-->
     </header>
     <main>
 	  <div class="moving_gallery">
@@ -92,14 +73,20 @@ Update all other footer sections when it is fixed
 		<img src="FACEBOOK_LIVE BACKGROUND.png" class="gallery">
 		<img src="1920x1080_ways_to_give_background.png" class="gallery">
 	  </div>
-	  <script src="script.js"></script>
-      <section id="about">
-        <h2>About Us</h2>
-        <p>Welcome to RCCG Dominion Chapel, a faith community dedicated to spreading the love and teachings of Jesus Christ. We are a vibrant and inclusive congregation located in the heart of Galloway, NJ, and we strive to make a positive impact in our community and beyond.
+	  <script src="carosel.js"></script>
+	  
+	  <br></br>
+      
+	  <section id="about">
+        <h2>WELCOME TO DOMINION CHAPEL!</h2>
+        <p>This is a faith community dedicated to spreading the love and teachings of Jesus Christ. We are a vibrant and inclusive congregation located in the heart of Galloway, NJ, and we strive to make a positive impact in our community and beyond.
 		<br></br>If you are looking for a place to grow in your faith, connect with God and others, and make a positive impact in the world, we invite you to join us at Dominion Chapel. Regardless of where you are on your spiritual journey, you are welcome here. We look forward to getting to know you and walking alongside you on your faith journey.</p>
 	  </section>
-      <section id="services">
-	      <h2>Our Services</h2>
+	  
+	  <br></br>
+      
+	  <section id="services">
+	      <h2>OUR SERVICES</h2>
 		  <div class="services-grid">
 			<div class="service">
 			  <img src="church.png" alt="Sunday Service">
@@ -123,19 +110,33 @@ Update all other footer sections when it is fixed
 			</div>
 		  </div>		
       </section>
-      <section id="pastors">
-        <h2>Our Pastors</h2>
+	  
+	  <br></br>
+	  
+	  <section id="livestreams">
+		<h2>CATCH OUR LIVESTEAMS!</h2>
+		<div id="live-images">
+			<a href="https://www.youtube.com/@rccgdominionchapelgalloway5899/featured"><img src="pexels-freestocksorg-34407.jpg" alt="youtube"></a>
+			<a href="https://www.facebook.com/rccgdominionchapelnj/"><img src="pexels-pixabay-267482.jpg" alt="facebook"></a>
+		</div>
+		<h3>Follow us on Facebook Live and YouTube to join the uplifting experience at RCCG Dominion Chapel NJ. Tune in and be blessed as you immerse yourself in our enriching content. May you be blessed as you do so.</h3>
+	  </section>
+	  
+	  <br></br>
+      
+	  <section id="pastors">
+        <h2>OUR PASTORS</h2>
 		<h3>Our team of ministers is dedicated to serving our community and providing spiritual guidance to those in need. They bring a wealth of experience, knowledge, and compassion to their work, and we are proud to have them as part of our team.</h3>
 		
 		<div class="pastor-grid">
 			<div class="pastor">
-				<img src="your-image-source.jpg" class="pastor-image">
+				<img src="2023-05-24 18_20_54-4102242234662347391684959763246.jpg - paint.net 5.0.3.png" class="pastor-image">
 				<h4>Moses Gbadebo</h4>
 				<h5>Parish Pastor<h5>
 			</div>
 			
 			<div class="pastor">
-				<img src="your-image-source.jpg" class="pastor-image">	
+				<img src="2023-05-24 18_20_19-14668898677466150971684878266601.jpg - paint.net 5.0.3.png" class="pastor-image">	
 				<h4>Beatrice Gbadebo</h4>
 				<h5>Co-Pastor</h5>
 			</div>
@@ -143,11 +144,14 @@ Update all other footer sections when it is fixed
 			<div class="pastor">
 				<img src="your-image-source.jpg" class="pastor-image">
 				<h4>Victor Ocasio</h4>
-				<h5>Associate Pastor</h5>
+				<h5>Co-Pastor</h5>
 			<div>
 		</div>
       </section>
-    </main>
+	  
+	  <br></br>
+    
+	</main>
     <footer>
 		<section id="contact">
 			<div id="contact-section">
@@ -169,8 +173,6 @@ Update all other footer sections when it is fixed
 			</div>
 		</section>
 			
-		<hr class = "line">
-
 		<div id="nav_copyright">
 			<nav>
 				<div>
@@ -180,18 +182,22 @@ Update all other footer sections when it is fixed
 					</span>
 					RCCG Dominion Chapel Galloway, NJ
 				</div>
+
 				<ul>
 				  <li><a href="index.html">Home</a></li>
 				  <li><a href="#about">About Us</a></li>
 				  <li><a href="giving.html">Giving</a></li>
 				  <li><a href="#services">Our Services</a></li>
-				  <li><a href="index-es.html">Español</a></li>
+				  <li><a href="#">Español - Coming Soon</a></li>
 				  <li><a href="giving.html">Giving</a></li>
 				  <li><a href="#contact">Contact Us</a></li>
 				</ul>
-					
-				<a href="https://www.facebook.com/rccgdominionchapelnj/"><img src="facebook.png" alt="Facebook Link"></a>								  
-				<a href="https://www.youtube.com/@rccgdominionchapelgalloway5899/featured"><img src="youtube.png" alt="Youtube Link"></a>
+				
+				<div class="navbar-icons">
+					<a href="#" class="icon"><i class="fas fa-search"></i></a>
+					<a href="https://www.facebook.com/rccgdominionchapelnj/" class="icon"><i class="fab fa-facebook"></i></a>								  
+					<a href="https://www.youtube.com/@rccgdominionchapelgalloway5899/featured" class="icon"><i class="fab fa-youtube"></i></a>
+				</div>
 		  </nav>
 		</div>
     </footer>

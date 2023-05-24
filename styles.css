@@ -2,9 +2,9 @@
 {
   border-radius: 50%;
   border: 10px;
-  max-width: 250%;
-  max-height: 100%;
-  box-shadow: 3px 3px 5px grey;
+  width: 25%;
+  height: 25%;
+  box-shadow: none;
   transition: transform 0.2s;
   padding-bottom: 0px;
   padding-top: 0px;
@@ -23,7 +23,8 @@
   grid-gap: 0px;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20px;
+  margin-top: 0px;
+  box-shadow: none;
 }
 
 .gallery.last-child 
@@ -32,17 +33,31 @@
   margin-bottom: 0px;
 }
 
-#about 
+#about
+{
+  background-color: white;
+}
+
+#about p
 {
   width: 100%;
-  height: 100%;
-  display: initial;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: black;
 }
 
 #about h2
 {
   font-size: 46px;
-  color: indianred;
+  background-color: transparent;
+  color: black;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  margin-bottom: 0px;
+  font-weight: bold;
 }
 
 div img 
@@ -61,9 +76,16 @@ a
   text-decoration: none;
 }
 
+/*
 a:hover 
 {
   text-decoration: blink;
+}
+*/
+
+body header
+{
+  background-color: transparent;
 }
 
 /*header nav 
@@ -222,7 +244,8 @@ h2
 
 p 
 {
-  margin-bottom: 30px;
+  margin-bottom: 0px;
+  margin-top: 0px;
 }
 
 footer
@@ -234,6 +257,7 @@ footer
   width: auto;
   padding: 0px;
   margin: inherit;
+  border: none;
 }
 
 footer h2
@@ -248,6 +272,12 @@ section
   background-color: white;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   height: auto;
+}
+
+#nav_copyright .navbar-icons
+{
+  align-items: center;
+  background-color: transparent;
 }
 
 #nav_copyright nav img
@@ -280,16 +310,13 @@ section
   text-align: center;
   align-items: inherit;
   background-color: transparent;
-  margin-right: 190px;
+  margin-right: 100px;
   padding: 0;
 }
 
 #nav_copyright nav ul li
 {
-  margin-top: 0px;
-  margin-bottom: 0px;
   display: flex;
-  margin-right: 0px;
 }
 
 #nav_copyright nav ul li a
@@ -306,6 +333,15 @@ section
   border-radius: 0px;
   transition: border-radius 0.0s ease-in-out;
   color: hsl(40, 60%, 65%);
+  text-decoration: none;
+}
+
+#nav_copyright
+{
+  background-color: hsl(210, 85%, 15%);
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
 #nav_copyright nav div 
@@ -316,7 +352,7 @@ section
   color: inherit;
   display: inline-table;
   background-color: transparent;
-  margin-right: 75px;
+  margin-right: 80px;
   margin-left: 25px;
   padding: 0;
 }
@@ -325,6 +361,7 @@ section
 {
   box-sizing: border-box;
   width: 75%;
+  border: none;
 }
 
 #contact
@@ -360,6 +397,7 @@ section
 #contact a:hover
 {
   color: hsl(360, 100%, 65%);
+  text-decoration: none;
 }
 
 #contact h2
@@ -476,7 +514,7 @@ html
   align-items: center;
   align-content: center;
   overflow: visible;
-  background-color: transparent;
+  background-color: white;
 }
 
 .html-site::-webkit-scrollbar 
@@ -532,21 +570,29 @@ body h1, h2, h3, p
 
 #pastors
 {
-  background-color: transparent;
+  background-color: papayawhip;
 }
 
 #pastors h2
 {
-  color: darkkhaki;
+  background-color: transparent;
+  color: black;
   font-size: 46px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
 }
 
-#pastors h3, h4
+#pastors h3
 {
   font-style: normal;
   font-weight: normal;
   color: black;
   padding: 15px;
+  font-size: 20px;
+  font-family: "Lato", sans-serif;
 }
 
 #pastors h4
@@ -593,34 +639,19 @@ body h1, h2, h3, p
   align-items: center;
 }
 
-.loading-screen 
+#loading-screen 
 {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   z-index: 9999;
-}
-
-.spinner 
-{
-  border: 8px solid rgba(255, 255, 255, 0.3);
-  border-top: 8px solid #ffffff;
-  border-radius: 50%;
-  width: 50px;
-  height: 50px;
-  animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
 }
 
 .loaded #loader {
@@ -714,15 +745,21 @@ body h1, h2, h3, p
 
 #services
 {
-  width: auto;
+  width: 100%;
   height: 100%;
-  background-color: transparent;
+  background-color: papayawhip;
+  margin-bottom: 0px;
 }
 
 #services h2
 {
   font-size: 46px;
-  color: ;
+  background-color: transparent;
+  color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 45px;
+  font-weight: bold;
 }
 
 .services-grid 
@@ -753,6 +790,7 @@ body h1, h2, h3, p
   padding-top: 20px;
   font-size: 17px;
   width: auto;
+  color: black;
 }
 
 .service p
@@ -761,6 +799,7 @@ body h1, h2, h3, p
   padding-top: 0px;
   font-size: 13px;
   width: auto;
+  color: black;
 }
 
 .service em
@@ -783,10 +822,25 @@ body h1, h2, h3, p
   display: inline-flex;
 }
 
+.navbar
+{
+  background-color: hsl(210, 85%, 15%);
+}
+
 .navbar-brand 
 {
   margin-right: 0px;
+  margin-left: 5px;
   background-color: transparent;
+  font-family: "Lato", sans-serif;
+  color: white;
+}
+
+.navbar-brand:hover
+{
+  text-decoration: none;
+  color: white;
+  cursor: default;
 }
 
 .navbar-nav 
@@ -794,33 +848,39 @@ body h1, h2, h3, p
   margin: 0 30px;
   display: flex;
   align-items: center;
+  background-color: transparent;
 }
 
-.navbar-nav .nav-item 
+.navbar-nav .nav-item .nav-link
 {
-  margin: 10px;
+  margin-right: 5px;
   text-align: center;
+  font-family: "Lato", sans-serif;
+  background-color: transparent;
+  color: white;
 }
 
-.navbar-nav .nav-link 
+.navbar-nav .nav-item .nav-link:hover
 {
-  color: #333;
-}
-
-.navbar-nav .nav-link:hover, .navbar-nav .nav-link:focus 
-{
-  color: #000;
+  color: hsl(40, 60%, 65%);
 }
 
 .navbar-icons 
 {
   display: flex;
-  align-items: center;
+  align-items: right;
+  color: white;
 }
 
 .navbar-icons .icon 
 {
   margin-left: 15px;
+  color: white;
+}
+
+.navbar-icons .icon:hover 
+{
+  color: hsl(40, 60%, 65%);
 }
 
 @font-face 
@@ -833,4 +893,158 @@ body h1, h2, h3, p
 {
   font-family: 'Lora';
   src: url('Lora-VariableFont_wght.ttf') format('truetype');
+}
+
+.loader {
+  position: relative;
+  width: 80px;
+  margin: 100px auto;
+}
+
+.duo {
+  height: 20px;
+  width: 50px;
+  background: hsla(0, 0%, 0%, 0.0);
+  position: absolute;
+  
+}
+
+.duo, .dot {
+  animation-duration: 0.8s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+
+.duo1 {
+  left: 0;
+}
+
+.duo2 {
+  left: 30px
+}
+
+
+.dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background: #333;
+  position: absolute;
+}
+
+.dot-a {
+  left: 0px;  
+}
+
+.dot-b {
+  right: 0px;
+}
+
+
+@keyframes spin {
+    0% { transform: rotate(0deg) }
+   50% { transform: rotate(180deg) }
+  100% { transform: rotate(180deg) }
+}
+
+@keyframes onOff {
+    0% { opacity: 0; }
+   49% { opacity: 0; }
+   50% { opacity: 1; }
+  100% { opacity: 1; }
+}
+
+.duo1 {
+  animation-name: spin;
+}
+
+.duo2 {
+  animation-name: spin;
+  animation-direction: reverse;
+}
+
+.duo2 .dot-b {
+  animation-name: onOff;
+}
+
+.duo1 .dot-a {
+  opacity: 0;
+  animation-name: onOff;
+  animation-direction: reverse;
+}
+
+#livestreams
+{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#livestreams h2
+{
+  background-color: transparent;
+  color: black;
+  font-size: 46px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+}
+
+#livestreams h3
+{
+  font-style: normal;
+  font-weight: normal;
+  color: black;
+  padding: 15px;
+  font-size: 20px;
+  font-family: "Lato", sans-serif;
+}
+
+#livestreams #live-images a
+{
+  text-decoration: none;
+  width: 50%;
+  height: 50%;
+  margin: 0px;
+  padding: 0px;
+  background-color: transparent;
+  margin-left: 250px;
+  margin-right: 0px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+#livestreams a:hover
+{
+  border-radius: 10px;
+  border: 1px transparent #000;
+  background-color: transparent;
+  transition: border-radius 0.0s ease-in-out;
+}
+
+#live-images
+{
+  display: inline-flex;
+  margin: 0px;
+  padding: 0px;
+}
+
+#livestreams img
+{
+  border-radius: 5%;
+  border: 10px;
+  max-width: 50%;
+  max-height: 50%;
+  box-shadow: 3px 3px 5px grey;
+  transition: transform 0.2s;
+  padding: 0px;
+  margin: 0px;
+}
+
+#livestreams img:hover
+{
+  transform: scale(1.05);
 }
