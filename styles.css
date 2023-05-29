@@ -25,12 +25,14 @@
   margin-right: auto;
   margin-top: 0px;
   box-shadow: none;
+  width: auto;
 }
 
 .gallery.last-child 
 {
   margin-right: 0px;
   margin-bottom: 0px;
+  width: auto;
 }
 
 .about
@@ -341,6 +343,9 @@ section
   margin: 0;
   padding: 0;
   border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #nav_copyright nav div 
@@ -718,6 +723,14 @@ body h1, h2, h3, p
   transform: scale(1.1);
 }
 
+.center-icon 
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+
 #return-img img
 {
   border-radius: 50%;
@@ -843,6 +856,7 @@ body h1, h2, h3, p
   margin: 0 30px;
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: transparent;
 }
 
@@ -953,6 +967,9 @@ body h1, h2, h3, p
   display: inline-flex;
   margin: 0px;
   padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .livestreams img
