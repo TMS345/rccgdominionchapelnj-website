@@ -4,15 +4,18 @@ Fix livesteam section
 Fix nav section with boostrap
 Update espanol section
 Update all other footer sections when it is fixed
+Update giving section if tithe.ly falls through
 -->
 <html lang="en" class="html-site">
   <head>
     <meta charset="UTF-8">
     <title>Homepage - RCCG Dominion Chapel Galloway, NJ</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
 	<link rel="icon" type="image/png" href="rccg_logo.png">
-	  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-	  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Poppins">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Poppins">
+	<link href="stylesheet" href="output.css">
 	<script src="church-website.js"></script>
 	<body onload="current_year.js">
 	<script src="loading-screen.js"></script>
@@ -67,20 +70,23 @@ Update all other footer sections when it is fixed
     </header>
     <main>
 	  <div class="moving_gallery">
-		<img src="UPDATED RCCG NIGHT VIGIL.png" class="gallery">
+		<img src="LATEST RCCG NIGHT VIGIL.png" class="gallery">
 		<img src="rccg_sunday_school.png" class="gallery">
-		<img src="UPDATED RCCG NIGHT VIGIL.png" class="gallery">
 		<img src="FACEBOOK_LIVE BACKGROUND.png" class="gallery">
 		<img src="1920x1080_ways_to_give_background.png" class="gallery">
+		<img src="sunday_service.png" class="gallery">
+		<img src="workesr_meeting.png" class="gallery">
+		<img src="ZOOM BIBLE STUDY.png" class="gallery">
+		<img src="updated RCCG Prayer Meeting.png" class="gallery">
 	  </div>
 	  <script src="carosel.js"></script>
 	  
 	  <br></br>
       
-	  <section id="about">
+	  <section class="bg-light py-1 about">
         <h2>WELCOME TO DOMINION CHAPEL!</h2>
-        <p>This is a faith community dedicated to spreading the love and teachings of Jesus Christ. We are a vibrant and inclusive congregation located in the heart of Galloway, NJ, and we strive to make a positive impact in our community and beyond.
-		<br></br>If you are looking for a place to grow in your faith, connect with God and others, and make a positive impact in the world, we invite you to join us at Dominion Chapel. Regardless of where you are on your spiritual journey, you are welcome here. We look forward to getting to know you and walking alongside you on your faith journey.</p>
+		<p class="text-center">This is a faith community dedicated to spreading the love and teachings of Jesus Christ. We are a vibrant and inclusive congregation located in the heart of Galloway, NJ, and we strive to make a positive impact in our community and beyond.
+		<br></br> If you are looking for a place to grow in your faith, connect with God and others, and make a positive impact in the world, we invite you to join us at Dominion Chapel. Regardless of where you are on your spiritual journey, you are welcome here. We look forward to getting to know you and walking alongside you on your faith journey.</p>
 	  </section>
 	  
 	  <br></br>
@@ -113,13 +119,13 @@ Update all other footer sections when it is fixed
 	  
 	  <br></br>
 	  
-	  <section id="livestreams">
-		<h2>CATCH OUR LIVESTEAMS!</h2>
-		<div id="live-images">
-			<a href="https://www.youtube.com/@rccgdominionchapelgalloway5899/featured"><img src="pexels-freestocksorg-34407.jpg" alt="youtube"></a>
-			<a href="https://www.facebook.com/rccgdominionchapelnj/"><img src="pexels-pixabay-267482.jpg" alt="facebook"></a>
+	  <section class="livestreams">
+		<h2 class="mb-3">CATCH OUR LIVESTEAMS!</h2>
+		<div class="row ml-auto mr-auto mb-2">
+			<a href="https://www.youtube.com/@rccgdominionchapelgalloway5899/featured"><img class="img-fluid rounded" src="pexels-freestocksorg-34407.jpg" alt="youtube" loading="lazy"></a>
+			<a href="https://www.facebook.com/rccgdominionchapelnj/"><img class="img-fluid rounded" src="pexels-pixabay-267482.jpg" alt="facebook" loading="lazy"></a>
 		</div>
-		<h3>Follow us on Facebook Live and YouTube to join the uplifting experience at RCCG Dominion Chapel NJ. Tune in and be blessed as you immerse yourself in our enriching content. May you be blessed as you do so.</h3>
+		<h3>Follow us on Facebook Live and YouTube to join the uplifting experience at RCCG Dominion Chapel NJ. Tune in and be blessed!</h3>
 	  </section>
 	  
 	  <br></br>
