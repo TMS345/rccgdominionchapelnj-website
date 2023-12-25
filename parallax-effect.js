@@ -1,15 +1,9 @@
-document.addEventListener('DOMContentLoaded', function() {
-    var parallaxContainer = document.querySelector('.parallax-container');
-
-    function parallaxScroll(event) {
-      var scrollPosition = parallaxContainer.scrollTop;
+    document.addEventListener('scroll', function() {
       var parallaxSections = document.querySelectorAll('.parallax-section');
 
       for (var i = 0; i < parallaxSections.length; i++) {
-        var speed = parallaxSections[i].getAttribute('data-speed');
-        parallaxSections[i].style.transform = 'translateY(' + scrollPosition * speed + 'px)';
+        var rect = parallaxSections[i].getBoundingClientRect();
+        var translateY = Math.max(rect.top * -0.4, -100);
+        parallaxSections[i].style.transform = 'translateY(' + translateY + 'px)';
       }
-    }
-
-    parallaxContainer.addEventListener('scroll', parallaxScroll);
-});
+    });

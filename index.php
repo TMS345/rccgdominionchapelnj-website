@@ -3,11 +3,13 @@
 Update all other footer sections when it is fixed
 Change font
 Add header images to each page
+!!Change site names to be index.php!!
+User validate newsletter enteres
 -->
 <html lang="en" class="html-site">
   <head>
     <meta charset="UTF-8">
-    <title>Homepage - RCCG Dominion Chapel Galloway, NJ</title>
+    <title>Homepage - RCCG Dominion Chapel, Galloway, NJ</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
 	<link rel="icon" type="image/png" href="rccg_logo.png">
@@ -78,9 +80,9 @@ Add header images to each page
 			<img src="LATEST RCCG NIGHT VIGIL.png" class="gallery">
 			<img src="rccg_sunday_school.png" class="gallery">
 			<img src="FACEBOOK_LIVE BACKGROUND.png" class="gallery">
-			<img src="1920x1080_ways_to_give_background.png" class="gallery">
+			<img src="Latest_Ways_to_Give.png" class="gallery">
 			<img src="sunday_service.png" class="gallery">
-			<img src="workesr_meeting.png" class="gallery">
+			<img src="workers_meeting.png" class="gallery">
 			<img src="ZOOM BIBLE STUDY.png" class="gallery">
 			<img src="updated RCCG Prayer Meeting.png" class="gallery">
 		</div>
@@ -177,10 +179,28 @@ Add header images to each page
 				<h4>Subscribe to our newsletter</h4>
 				
 				<textarea id="message" name="message" rows="1" cols="40" placeholder="Enter your email address"></textarea>
-				<button type="submit">
-					<i class="icon fas fa-envelope"></i>
-				</button>
+
+				<form action="#" method="POST">
+					<input type="text" name="name" placeholder="Enter Name">
+					<button type="submit">
+						<i class="icon fas fa-envelope"></i>
+					</button>
+				</form>
 				
+				<p> 
+					<?php
+						if (isset($_POST['name'])) 
+						{
+						  $name = $_POST['name'];
+
+						  if (empty ($name)) {
+							echo "Please enter your name!";
+						  } else {
+							echo "Welcome, " . $name . "! You've been succesfully added to the newsletter.";
+						  }
+						}
+					?>
+				</p>
 			</div>
 			
 			<div id="contact-section">
