@@ -57,6 +57,7 @@ a
 {
   color: #333;
   text-decoration: none;
+  margin-bottom: 0px;
 }
 
 body header
@@ -129,15 +130,10 @@ section
   height: auto;
 }
 
-#nav_copyright
-{
-  display: flex;
-}
-
 #nav_copyright .navbar-icons
 {
-  align-items: center;
   background-color: transparent;
+  align-items: center;
 }
 
 #nav_copyright nav img
@@ -155,39 +151,46 @@ section
 
 #nav_copyright nav
 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+  flex-wrap: nowrap;
   border: none;
-  display: table;
   background-color: transparent;
-  text-align: center;
-  margin: 5px;
-  margin-bottom: 0px;
   color: white;
   font-family: 'Garamond', sans-serif;
 }
 
-#nav_copyright nav ul
+#nav_copyright nav div ul
 {
-  display: inline-flex;
-  text-align: center;
-  align-items: inherit;
+  font-style: normal;
+  display: flex;
+  flex-direction: row;
   background-color: transparent;
-  margin-right: 150px;
-  padding: 0;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
-#nav_copyright nav ul li
+#nav_copyright nav div ul li
 {
   display: flex;
+  margin-right: auto;
+  margin-left: auto;
+
 }
 
-#nav_copyright nav ul li a
+#nav_copyright nav div ul li a
 {
-  display: inline-flex;
+  display: flex;
+  flex-wrap: nowrap;
   margin: 10px;
   color: white;
   text-decoration: none;
   font-family: 'Garamond', sans-serif;
   font-weight: lighter;
+  align-items: bottom;
 }
 
 #nav_copyright nav ul li a:hover
@@ -207,18 +210,25 @@ section
   border: none;
 }
 
+#copyright-grid
+{
+  align-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 #nav_copyright nav div 
 {
   text-align: left;
   font-style: italic;
   font-size: 15px;
   color: inherit;
-  display: inline-table;
+  display: flex;
   background-color: transparent;
-  margin-right: 200px;
-  margin-left: 25px;
-  padding: 0;
-  font-family: 'Garamond', sans-serif;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+  font-family: 'Garamond', sans-serif; 
 }
 
 #contact-section
@@ -226,6 +236,11 @@ section
   box-sizing: border-box;
   width: 75%;
   border: none;
+}
+
+#contact-section form input::placeholder 
+{
+  color: black;
 }
 
 #contact
@@ -287,27 +302,69 @@ section
 
 #contact button 
 {
-  display: inline-block;
-  padding: 0px 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
   margin-left: 5px;
-  border: none;
-  border-radius: 10px;
-  transition: box-shadow 0.3s ease-in-out;
-  font-size: 16px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  border: 3px solid white;
+  border-radius: 30px;
+  font-size: 15px;
   font-weight: bold;
   text-transform: uppercase;
-  color: white;
-  background-color: transparent;
+  color: darkcyan;
+  background-color: white;
+  align-content: center;
+  width: 60%;
 }
 
 #contact button:hover 
 {
-  transform: scale(1.1);
+  transition: box-shadow 1s ease-in-out;
+  transform: scale(1.01);
+  cursor: pointer;
+  color: white;
+  background-color: darkcyan;
+  border-color: darkcyan;
 }
 
-#contact .icon
+#contact-section input
 {
-  font-size: 35px;
+  align-items: top;
+  background-color: white;
+  padding: 0px 0px 0px 0px;
+}
+
+/*#contact-section button
+{
+  font-size: 40px;
+  background-color: white;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-left: 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  margin-right: 0px;
+  border: 2px solid white;
+  color: black;
+}*/
+
+#contact-section form
+{
+  background-color: transparent;
+  display: grid;
+  padding-top: 5px;
+  align-items: center;
+}
+
+#contact-section form input
+{
+  margin-bottom: 5px;
 }
 
 #contact a
@@ -350,7 +407,6 @@ section
 }
 
 /* !!!!!!!!!!!!!!! Might add form in the future !!!!!!!!!!!!!!!
-form 
 {
   display: flex;
   flex-direction: column;
@@ -447,7 +503,7 @@ a img
   margin-left: auto;
   margin-right: auto;
   display: flex;
-  margin-bottom: 15px;
+  margin-bottom: 0px;
   padding: 0px;
 }
 
@@ -562,12 +618,18 @@ body h1, h2, h3, p
   z-index: 9999;
 }
 
-.giving head, body
+.giving
 {
   background-color: transparent;
+  font-family: 'Garamond', sans-serif;
 }
 
-.giving body img
+.giving h1
+{
+  font-weight: bold;
+}
+
+.giving img
 {
   border-radius: 50%;
   border: 10px;
@@ -575,13 +637,38 @@ body h1, h2, h3, p
   max-height: 25%;
   box-shadow: 3px 3px 5px grey;
   transition: transform 0.2s;
-  padding-bottom: 0px;
-  padding-top: 0px;
-  display: flex;
+  padding-bottom: auto;
+  padding-top: auto;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: inline-flex;
   align-items: center;
+  align-self: center;
 }
 
-.giving body h3
+.giving .icon
+{
+  margin-right: 5px;
+}
+
+.giving a
+{
+    text-decoration: none;
+}
+
+.giving a:hover
+{
+  padding-bottom: 0px;
+  padding-top: 0px;
+  border-radius: 10px;
+  border: 1px transparent #000;
+  background-color: transparent;
+  transition: border-radius 0.0s ease-in-out;
+}
+
+.giving h3
 {
   font-weight: lighter;
   font-style: normal;
@@ -591,6 +678,31 @@ body h1, h2, h3, p
 .giving img:hover
 {
   transform: scale(1.1);
+}
+
+.giving-grid
+{
+  display: block;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 0px;
+  height: auto;
+  background-color: transparent;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+.give
+{
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  box-sizing: border-box;
+  width: auto;
+  height: auto;
+  display: grid;
 }
 
 #return-img img
@@ -606,6 +718,7 @@ body h1, h2, h3, p
   padding-top: 0px;
   display: flex;
   align-items: center;
+  text-align: center;
 }
 
 #return-img img:hover
@@ -729,10 +842,16 @@ body h1, h2, h3, p
   object-fit: cover;
 }*/
 
+.column
+{
+  flex-wrap: nowrap;
+}
+
 .navbar
 {
   background-color: hsl(210, 85%, 15%);
   z-index: 0;
+  display: inline-flex;
 }
 
 .navbar-brand 
@@ -754,6 +873,8 @@ body h1, h2, h3, p
 .navbar-nav 
 {
   margin: 0 30px;
+  margin-top: 0px;
+  margin-bottom: 0px;
   display: flex;
   align-items: center;
   background-color: transparent;
@@ -824,6 +945,16 @@ body h1, h2, h3, p
   align-items: center;
   text-align: center;
   background-color: transparent;
+}
+
+.livestreams-grid
+{
+  display: table-row;
+  margin-bottom: 4px;
+  margin-top: 4px;
+  margin-left: 0px;
+  margin-right: 0px;
+  align-items: center;
 }
 
 .livestreams h2

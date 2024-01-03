@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <!--
 Update all other footer sections when it is fixed
-Change font
 Add header images to each page
-!!Change site names to be index.php!!
+!!Change site names to be index.php once deployed on another platform!!
 User validate newsletter enteres
 -->
 <html lang="en" class="html-site">
@@ -12,7 +11,7 @@ User validate newsletter enteres
     <title>Homepage - RCCG Dominion Chapel, Galloway, NJ</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-	<link rel="icon" type="image/png" href="rccg_logo.png">
+	<link rel="icon" type="image/png" href="official_logo_2.png">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Poppins">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
@@ -30,14 +29,14 @@ User validate newsletter enteres
 				<div class="parallax-content">
 					<nav class="navbar navbar-expand-lg custom-navbar">
 						<div class="column">
-							<img src="livestream_logo.png" alt="Logo" width="50" height="50" class="d-inline-block align-top">
-							<a href="index.html" class="navbar-brand">RCCG Dominion Chapel Galloway, NJ</a>
+							<img src="official_logo_2.png" alt="Logo" width="50" height="50" class="d-inline-block vertical-align-bottom">
+							<a href="index.html" class="navbar-brand align-middle">RCCG Dominion Chapel, Galloway, NJ</a>
 						</div>
 						
 						<div class="column collapse navbar-collapse" id="navbarNav">
 						  <ul class="navbar-nav">
 							<li class="nav-item">
-							  <a class="nav-link" href="index.html">Home</a>
+							  <a class="nav-link" href="#navbarNav">Home</a>
 							</li>
 							<li class="nav-item">
 							  <a class="nav-link" href="#about">About</a>
@@ -46,7 +45,7 @@ User validate newsletter enteres
 							  <a class="nav-link" href="#services">Services</a>
 							</li>
 							<li class="nav-item">
-							  <a class="nav-link" href="giving.html">Giving</a>
+							  <a class="nav-link" href="#giving">Giving</a>
 							</li>
 							<li class="nav-item">
 							  <a class="nav-link" href="#contact">Contact</a>
@@ -88,7 +87,7 @@ User validate newsletter enteres
 		</div>
 		<script src="carosel.js"></script>
 		
-		<section class="about">
+		<section class="about" id = "welcome">
 			<h2>WELCOME TO DOMINION CHAPEL!</h2>
 			<p class="mt-0 text-center">This is a faith community dedicated to spreading the love and teachings of Jesus Christ. We are a vibrant and inclusive congregation located in the heart of Galloway, NJ, and we strive to make a positive impact in our community and beyond.
 			<br></br> If you are looking for a place to grow in your faith, connect with God and others, and make a positive impact in the world, we invite you to join us at Dominion Chapel. Regardless of where you are on your spiritual journey, you are welcome here. We look forward to getting to know you and walking alongside you on your faith journey.</p>
@@ -117,13 +116,18 @@ User validate newsletter enteres
 			  <h3>Night Vigil</h3>
 			  <p>To join us for our Night Vigil Services on the <em>last Friday</em> of every month, please dial in using the phone code: <em>+1 563 999 1485</em>. We pray that you will be blessed as you participate in our services.</p>
 			</div>
+			<div class="service">
+			  <img src="pexels-rodolfo-quirós-1848731.jpg" alt="Sunday School">
+			  <h3>Night Vigil</h3>
+			  <p>Join us every <em>Sunday</em> for Sunday School at <em>11 AM</em> every week. Can't wait to see you there!</p>
+			</div>
 		  </div>		
 		</section>
 	  	  
 		<section class="livestreams">
 			<h2>CATCH OUR LIVESTEAMS!</h2>
-			<h3>Follow us on Facebook Live and YouTube to join the uplifting experience at RCCG Dominion Chapel NJ. Tune in and be blessed!</h3>
-			<div class="row ml-auto mr-auto mb-4">
+			<h3>Follow us on Facebook Live and YouTube at RCCG Dominion Chapel NJ. Tune in and be blessed!</h3>
+			<div class="livestreams-grid">
 				<a href="https://www.facebook.com/rccgdominionchapelnj/" target="_blank">
 				  <i class="fab fa-facebook"></i> Visit our Facebook page
 				</a>
@@ -158,6 +162,32 @@ User validate newsletter enteres
 				</div>
 			</div>
 		</section>
+		
+		<section class="giving" id = "giving">
+			<h1>WAYS TO GIVE</h1>
+			<h3>Thank you for your generosity!</h3>
+			
+			<div class = "giving-grid">
+				<div class = "give">
+					<h2>1 - Zelle</h2>
+								
+					<a href="https://www.zellepay.com/get-started"><i class="icon fas fa-money-bill-wave"></i>Zelle<!--img src="zelle_link.png" alt="Zelle Link"--></a>
+					
+					<h2>Step 1</h2> <h3>Find Zelle in your banking app or enter your bank's name in the link above</h3>
+					<h2>Step 2</h2> <h3>Enter the number (609) 630-3223 as the recipient</h3>
+					<h2>Step 3</h2> <h3>Enter the amount you want to send</h3>
+					<h2>Step 4</h2> <h3>Click "Send"</h3>
+				</div>
+				
+				<div class = "give">
+					<h2>2 - In the Church</h2>
+				</div>
+				
+				<div class = "give">
+					<h2>3 - Via a Check to RCCG Dominion Chapel, Galloway, NJ</h2>
+				</div>
+			</div>
+		</section>
 		  
 	  <!--/div-->
 	  </main>
@@ -176,31 +206,21 @@ User validate newsletter enteres
 			
 			<div id="contact-section">
 				<h3>Newsletter</h3>
-				<h4>Subscribe to our newsletter</h4>
+				<h4>Join our email newsletters</h4>
 				
-				<textarea id="message" name="message" rows="1" cols="40" placeholder="Enter your email address"></textarea>
+				<!--Embed php form that goes to form.php once server is working-->
+				<form action="form.php" method="POST">
+					<fieldset>
+						<input type="text" name="first-name" placeholder="First Name">
+						<br>
+						<input type="text" name="last-name" placeholder="Last Name">
+						<br>
+						<input type="text" name="email" placeholder="Email">
+						<br>
+						<button type="submit"> <!--i class="icon fas fa-envelope"></i-->Join Now</button>					
+					</fieldset>
 
-				<form action="#" method="POST">
-					<input type="text" name="name" placeholder="Enter Name">
-					<button type="submit">
-						<i class="icon fas fa-envelope"></i>
-					</button>
 				</form>
-				
-				<p> 
-					<?php
-						if (isset($_POST['name'])) 
-						{
-						  $name = $_POST['name'];
-
-						  if (empty ($name)) {
-							echo "Please enter your name!";
-						  } else {
-							echo "Welcome, " . $name . "! You've been succesfully added to the newsletter.";
-						  }
-						}
-					?>
-				</p>
 			</div>
 			
 			<div id="contact-section">
@@ -214,25 +234,29 @@ User validate newsletter enteres
 		<div id="nav_copyright">
 			<nav>
 				<div>
-					&copy;
 					<span id="copyright">
+						&copy;
 						<script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
+						RCCG Dominion Chapel, Galloway, NJ
 					</span>
-					RCCG Dominion Chapel Galloway, NJ
 				</div>
 
-				<ul>
-				  <li><a href="index.html">Home</a></li>
-				  <li><a href="#about">About Us</a></li>
-				  <li><a href="#services">Our Services</a></li>
-				  <li><a href="giving.html">Giving</a></li>
-				  <li><a href="#contact">Contact Us</a></li>
-				</ul>
+				<div>
+					<ul>
+						<li><a href="#navbarNav">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="#services">Services</a></li>
+						<li><a href="#giving">Giving</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
 				
-				<div class="navbar-icons">
-					<a href="#" class="icon"><i class="fas fa-search"></i></a>
-					<a href="https://www.facebook.com/rccgdominionchapelnj/" class="icon"><i class="fab fa-facebook"></i></a>								  
-					<a href="https://www.youtube.com/@rccgdominionchapelgalloway5899/featured" class="icon"><i class="fab fa-youtube"></i></a>
+				<div>
+					<div class="navbar-icons">
+						<a href="#" class="icon"><i class="fas fa-search"></i></a>
+						<a href="https://www.facebook.com/rccgdominionchapelnj/" class="icon"><i class="fab fa-facebook"></i></a>								  
+						<a href="https://www.youtube.com/@rccgdominionchapelgalloway5899/featured" class="icon"><i class="fab fa-youtube"></i></a>
+					</div>
 				</div>
 		  </nav>
 		</div>
