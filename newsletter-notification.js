@@ -1,31 +1,24 @@
-function notifyNewsletterSuccess() 
+function notifyNewsletterSuccess (firstName, lastName, email)
 {
-  const notificationContainer = document.getElementById("newsletter-notification");
-
-  // Create the notification content with an image
-  const notificationContent = document.createElement("div");
-  notificationContent.innerHTML = `
-    <img src="path/to/your/success-image.jpg" alt="Success icon">
-    <h2>You're in!</h2>
-    <p>Thanks for subscribing to our newsletter! Stay tuned for exciting updates.</p>
-  `;
-
-  // Display the notification
-  notificationContainer.appendChild(notificationContent);
-
-  // Optional: Add animation or visual effects
-  notificationContent.classList.add("show"); // Assuming a CSS class for animation
-
-  // Optional: Auto-hide after a delay
-  setTimeout(() => {
-    notificationContent.classList.remove("show");
-  }, 5000); // Hide after 5 seconds
+  alert ("You're in, " + firstName + "! Thanks for subscribing to our newsletter! Stay tuned for exciting updates.");
 }
 
 // Trigger the notification function after successful form submission
-// (assuming you have a newsletter signup form with an ID of "newsletter-form")
+// (Assuming you have a newsletter signup form with an ID of "newsletter-form")
 document.getElementById("newsletter-form").addEventListener("submit", (event) => {
-  event.preventDefault(); // Prevent default form submission
-  // ... (Process newsletter signup logic here)
-  notifyNewsletterSuccess();
+  event.preventDefault();
+  // Extract user's name from form data (replace with your actual implementation)
+  const firstName = document.getElementById("firstName").value.trim ();
+  const lastName = document.getElementById("lastName").value.trim ();
+  const email = document.getElementById("email").value.trim ();
+
+  if (firstName === "" || lastName === "" || email === "")
+  {
+    alert ("Please fill in all required fields!");
+    return;
+  }
+
+  notifyNewsletterSuccess(firstName, lastName, email);
+
+  document.getElementById("newsletter-form").reset();
 });

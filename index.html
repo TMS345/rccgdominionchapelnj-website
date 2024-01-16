@@ -25,8 +25,8 @@ User validate newsletter enteres
 	<header>
 		<!--section class="hero"-->
 			<!--img src="pexels-brett-sayles-3633711.jpg" class="hero-image"-->
-			<div class="parallax-container">
-				<div class="parallax-content">
+			<!--div class="parallax-container"-->
+				<!--div class="parallax-content"-->
 					<nav class="navbar navbar-expand-lg custom-navbar">
 						<div class="column">
 							<img src="official_logo_2.png" alt="Logo" width="50" height="50" class="d-inline-block vertical-align-bottom">
@@ -70,9 +70,9 @@ User validate newsletter enteres
 						<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 						<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 					</nav>
-				</div>
+				<!--/div!-->
 			<!--/div-->
-		</section>
+		<!--/section-->
 	</header>
     <main>
 		<div class="moving_gallery">
@@ -209,17 +209,18 @@ User validate newsletter enteres
 				<h4>Join our email newsletters</h4>
 				
 				<!--Embed php form that goes to form.php once server is working-->
-				<form action="form.php" method="POST">
+				<form id="newsletter-form" <!--action="newsletter-form.php"--> method="POST">
 					<fieldset>
-						<input type="text" name="first-name" placeholder="First Name">
+						<input type="text" name="first-name" placeholder="First Name" id="firstName" required>
 						<br>
-						<input type="text" name="last-name" placeholder="Last Name">
+						<input type="text" name="last-name" placeholder="Last Name" id="lastName" required>
 						<br>
-						<input type="text" name="email" placeholder="Email">
+						<input type="email" name="email" placeholder="Email" id="email" required>
 						<br>
-						<button type="submit"> <!--i class="icon fas fa-envelope"></i-->Join Now</button>					
+						<button type="submit">Join Now</button>
+						
+						<script src="newsletter-notification.js"></script>
 					</fieldset>
-
 				</form>
 			</div>
 			

@@ -850,8 +850,9 @@ body h1, h2, h3, p
 .navbar
 {
   background-color: hsl(210, 85%, 15%);
-  z-index: 0;
+  z-index: 2;
   display: inline-flex;
+  position: relative;
 }
 
 .navbar-brand 
@@ -1027,7 +1028,7 @@ body h1, h2, h3, p
   transform: scale(1.05);
 }
 
-.parallax-container 
+/*.parallax-container 
 {
   height: 100%;
   overflow-x: hidden;
@@ -1054,9 +1055,9 @@ body h1, h2, h3, p
   background-position: center;
   opacity: 0.8;
   z-index: -1;
-}
+}*/
 
-.parallax-section:nth-child(1) 
+/*.parallax-section:nth-child(1) 
 {
   background-image: url('pexels-brett-sayles-3633711.jpg');
-}
+}*/
