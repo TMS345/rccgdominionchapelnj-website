@@ -199,7 +199,10 @@ section
   border: none;
   border-radius: 0px;
   transition: border-radius 0.0s ease-in-out;
-  color: darkcyan;
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: darkcyan;
+  /*KEEP WORKING ON THIS PART FOR ALL TOP AND BOTTOM NAV BARS AND COPYRIGHT LINKS TO UNDERLINE DARKCYAN*/transform: ;
 }
 
 #nav_copyright
@@ -260,7 +263,13 @@ section
 
 #contact a:hover
 {
-  color: hsl(360, 100%, 65%);
+  background-color: transparent;
+  border-radius: 10px;
+  border: none;
+  transition: border-radius 0.0s ease-in-out;
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: darkcyan;
 }
 
 #contact h2
@@ -378,15 +387,6 @@ section
   padding-bottom: 25px;
   padding-top: 5px;
   color: white;
-}
-
-#contact a:hover
-{
-  background-color: transparent;
-  border-radius: 10px;
-  border: 1px transparent #000;
-  transition: border-radius 0.0s ease-in-out;
-  color: darkcyan;
 }
 
 .google-map
@@ -629,6 +629,27 @@ body h1, h2, h3, p
   font-weight: bold;
 }
 
+.giving h2
+{
+  font-weight: normal;
+  font-style: normal;
+  font-size: 36px;
+}
+
+.giving h3
+{
+  font-weight: normal;
+  font-style: normal;
+  font-size: 26px;
+}
+
+.giving h4
+{
+  font-weight: lighter;
+  font-style: normal;
+  font-size: 17px;
+}
+
 .giving img
 {
   border-radius: 50%;
@@ -666,13 +687,6 @@ body h1, h2, h3, p
   border: 1px transparent #000;
   background-color: transparent;
   transition: border-radius 0.0s ease-in-out;
-}
-
-.giving h3
-{
-  font-weight: lighter;
-  font-style: normal;
-  font-size: 17px;
 }
 
 .giving img:hover
@@ -892,7 +906,10 @@ body h1, h2, h3, p
 
 .navbar-nav .nav-item .nav-link:hover
 {
-  color: darkcyan;
+  border: none;
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: darkcyan;
 }
 
 .navbar-icons 
@@ -948,9 +965,9 @@ body h1, h2, h3, p
   background-color: transparent;
 }
 
-.livestreams-grid
+.livestreams-element
 {
-  display: table-row;
+  display: inline-flex;
   margin-bottom: 4px;
   margin-top: 4px;
   margin-left: 0px;
@@ -966,7 +983,7 @@ body h1, h2, h3, p
   margin-top: 0px;
   margin-bottom: 0px;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 0px;
   font-weight: bold;
   font-family: "Garamond", sans-serif;
 }
@@ -978,6 +995,16 @@ body h1, h2, h3, p
   color: black;
   padding: 15px;
   font-size: 20px;
+  font-family: "Garamond", sans-serif;
+}
+
+.livestreams h4
+{
+  font-style: normal;
+  font-weight: normal;
+  color: black;
+  padding: 15px;
+  font-size: 13px;
   font-family: "Garamond", sans-serif;
 }
 
