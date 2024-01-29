@@ -202,7 +202,7 @@ section
   color: white;
   text-decoration: underline;
   text-decoration-color: darkcyan;
-  /*KEEP WORKING ON THIS PART FOR ALL TOP AND BOTTOM NAV BARS AND COPYRIGHT LINKS TO UNDERLINE DARKCYAN*/transform: ;
+  /*KEEP WORKING ON THIS PART FOR ALL TOP AND BOTTOM NAV BARS AND COPYRIGHT LINKS TO UNDERLINE DARKCYAN*/
 }
 
 #nav_copyright
@@ -211,6 +211,22 @@ section
   margin: 0;
   padding: 0;
   border: none;
+}
+
+#nav_copyright a
+{
+  color: white;
+}
+
+#nav_copyright a:hover
+{
+  background-color: transparent;
+  border-radius: 10px;
+  border: none;
+  transition: border-radius 0.0s ease-in-out;
+  color: white;
+  text-decoration: underline;
+  text-decoration-color: darkcyan;
 }
 
 #copyright-grid
