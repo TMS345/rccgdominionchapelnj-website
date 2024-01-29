@@ -20,6 +20,7 @@ function checkDevice()
     unavailableMessage.appendChild(image);
 
     document.body.appendChild(unavailableMessage);
+    window.stop();
   }
 }
 
