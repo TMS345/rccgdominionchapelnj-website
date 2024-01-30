@@ -6,7 +6,7 @@ text.textContent = "Sorry, this page is not yet available on mobile devices. Ple
 unavailableMessage.appendChild (text);
 
 const image = document.createElement ("img");
-image.src = "unavailable.png";
+image.src = "work-in-progress.png";
 image.alt = "Not Currently Available";
 unavailableMessage.appendChild (image);
 
