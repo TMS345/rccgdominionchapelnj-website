@@ -1,27 +1,14 @@
 function checkDevice () 
 {
-  const userAgent = navigator.userAgent.toLowerCase ();
+  const isMobile = /Android|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent.toLowerCase ());
+  /*const userAgent = navigator.userAgent.toLowerCase ();
   const isAndroid = userAgent.includes ("android");
   const isIos = userAgent.includes ("iphone") || userAgent.includes ("ipad");
+  */
 
-  if (isAndroid || isIos) 
+  if (isMobile) 
   {
-    const unavailableMessage = document.createElement ("div");
-    unavailableMessage.classList.add ("unavailable-message");
-
-    // Add text and image for visual clarity
-    const text = document.createElement ("p");
-    text.textContent = "Sorry, this page is not yet available on mobile devices. Please visit this page on a computer.";
-    unavailableMessage.appendChild (text);
-
-    const image = document.createElement ("img");
-    image.src = "unavailable.png";
-    image.alt = "Not Currently Available";
-    unavailableMessage.appendChild (image);
-
-    document.body.appendChild (unavailableMessage);
-
-    window.stop ();
+    window.location.href = "redirect.html";
   }
 }
 
