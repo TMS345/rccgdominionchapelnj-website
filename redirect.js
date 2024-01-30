@@ -1,7 +1,6 @@
 const unavailableMessage = document.createElement ("div");
 unavailableMessage.classList.add ("unavailable-message");
 
-// Add text and image for visual clarity
 const text = document.createElement ("p");
 text.textContent = "Sorry, this page is not yet available on mobile devices. Please visit this page on a computer.";
 unavailableMessage.appendChild (text);
