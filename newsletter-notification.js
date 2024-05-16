@@ -1,16 +1,16 @@
-function notifyNewsletterSuccess (firstName, lastName, email)
+const button = document.getElementById("newsletterNotification");
+
+function notifyNewsletterSuccess (firstName)
 {
   alert ("You're in, " + firstName + "! Thanks for subscribing to our newsletter! Stay tuned for exciting updates.");
 }
 
-// Trigger the notification function after successful form submission
-// (Assuming you have a newsletter signup form with an ID of "newsletter-form")
-document.getElementById("newsletter-form").addEventListener("submit", (event) => {
+button.addEventListener("click", (event) => {
   event.preventDefault();
   // Extract user's name from form data (replace with your actual implementation)
-  const firstName = document.getElementById("firstName").value.trim ();
-  const lastName = document.getElementById("lastName").value.trim ();
-  const email = document.getElementById("email").value.trim ();
+  const firstName = document.getElementById("firstName").value.trim();
+  const lastName = document.getElementById("lastName").value.trim();
+  const email = document.getElementById("email").value.trim();
 
   if (firstName === "" || lastName === "" || email === "")
   {
@@ -18,7 +18,7 @@ document.getElementById("newsletter-form").addEventListener("submit", (event) =>
     return;
   }
 
-  notifyNewsletterSuccess(firstName, lastName, email);
+  notifyNewsletterSuccess(firstName);
 
   document.getElementById("newsletter-form").reset();
 });
