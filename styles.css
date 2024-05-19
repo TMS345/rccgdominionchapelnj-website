@@ -336,7 +336,7 @@ section
   font-style: normal;
   font-weight: normal;
   margin-bottom: 0rem;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: lighter;
   padding-right: 0rem;
 }
@@ -416,58 +416,63 @@ section
   align-content: center;
 }
 
+.nav_copyright
+{
+  display: flex;  
+  justify-content: space-between;
+  align-items: center;
+  /* align-items: center; */
+  /* flex-wrap: nowrap; */
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-family: 'Jost', sans-serif;
+  margin: 0rem;
+  padding: 0rem;
+}
+
 .nav_copyright .navbar-icons
 {
   background-color: transparent;
   align-items: center;
 }
 
-.nav_copyright nav
-{
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));
-  grid-gap: .5rem;
-  flex-wrap: nowrap;
-  border: none;
-  background-color: transparent;
-  color: white;
-  font-family: 'Jost', sans-serif;
-}
-
-.nav_copyright nav div ul
+.nav_copyright div ul
 {
   font-style: normal;
-  flex-direction: row;
-  display: flex;
+  flex-direction: column;
+  /* display: block; */
   background-color: transparent;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 0rem;
-  margin-bottom: 0rem;
-  flex-wrap: wrap;
+  margin: 0rem;
+  /* align-content: center; */
+  justify-content: center;
+  padding-right: 2rem;
 }
 
-.nav_copyright nav div ul li
+.nav_copyright div ul li
 {
-  display: flex;
-  margin-right: auto;
-  margin-left: auto;
+  flex-direction: row;
   box-sizing: border-box;
+  justify-content: center;
+  padding: 0rem;
 }
 
-.nav_copyright nav div ul li a
+.nav_copyright div ul li a
 {
-  display: flex;
-  flex-wrap: nowrap;
-  margin: .5rem;
+  margin: .2rem;
   color: white;
   text-decoration: none;
   font-family: 'Jost', sans-serif;
   font-weight: lighter;
-  align-items: bottom;
+  font-size: .7rem;
+  font-weight: bold;
+  /* align-items: center;
+  text-align: center;
+  justify-content: center;
+  align-content: center; */
 }
 
-.nav_copyright nav ul li a:hover
+.nav_copyright div ul li a:hover
 {
   background-color: transparent;
   border: none;
@@ -477,43 +482,21 @@ section
   text-decoration: none;
 }
 
-.nav_copyright
+.nav_copyright div span
 {
-  background-color: transparent;
-  margin: 0rem;
-  padding: 0rem;
-  border: none;
-}
-
-.nav_copyright a
-{
-  color: white;
-}
-
-.nav_copyright a:hover
-{
-  background-color: transparent;
-  border-radius: .5rem;
-  border: none;
-  transition: border-radius 0.0s ease-in-out;
-  color: white;
-  text-decoration: underline;
-  text-decoration-color: darkcyan;
-}
-
-.nav_copyright nav div 
-{
-  text-align: left;
   font-style: italic;
-  font-size: .6rem;
+  font-size: .7rem;
   font-weight: bold;
   color: inherit;
-  display: flex;
   background-color: transparent;
   margin-right: auto;
   margin-left: auto;
-  align-items: center;
   font-family: 'Jost', sans-serif; 
+  /* align-items: center;
+  text-align: center;
+  justify-content: center; */
+  justify-content: center;
+  padding-left: 2rem;
 }
 
 .copyright-grid
