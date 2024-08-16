@@ -16,6 +16,7 @@ User validate newsletter enteres
 	<link rel="icon" type="image/png" href="images/official_logo_2.png">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
 		crossorigin="anonymous"></script>
@@ -23,7 +24,7 @@ User validate newsletter enteres
 
 	<!-- <script src="church-website.js"></script> -->
 
-<body onload="current_year.js">
+	<body onload="current_year.js">
 	<!-- <script src="parallax-effect.js"></script> -->
 	<!-- <script src="loading-screen.js"></script> -->
 	</head>
@@ -35,11 +36,10 @@ User validate newsletter enteres
 				<div class="container">
 					<a class="navbar-brand" href="#navbar">
 						<img src="images/official_logo_2.png" alt="Logo">
-						<!-- <a class="navbar-brand">RCCG Dominion Chapel, Galloway, NJ</a> -->
 					</a>
 
 					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="navbar-nav mx-auto justify-content-center">
+						<ul class="navbar-nav">
 							<li class="nav-item">
 								<a class="nav-link" href="#navbar">HOME</a>
 							</li>
@@ -81,7 +81,7 @@ User validate newsletter enteres
 			<section class="about d-flex flex-column align-items-center py-5" id="about">
 				<h2 class="mb-4 fw-bold">WHO ARE WE?</h2>
 				<p class="text-center lead">This is a faith community dedicated to spreading the love and teachings of
-					Jesus Christ. We are a vibrant and inclusive congregation located in the heart of Galloway, NJ, and
+					Jesus Christ. We are a vibrant and inclusive congregation located in Galloway, NJ, and
 					we strive to make a positive impact in our community and beyond.</p>
 				<p class="text-center lead">If you are looking for a place to grow in your faith, connect with God and
 					others, and make a positive impact in the world, we invite you to join us at Dominion Chapel.
@@ -89,81 +89,123 @@ User validate newsletter enteres
 					getting to know you and walking alongside you on your faith journey.</p>
 			</section>
 
-			<!--HAVE CSS TO JUST INCLUDE IMAGES AND NAME AND WHEN CLICKED SHOWS EXTRA DETAILS-->
-			<section class="services" id="services">
-				<h2>OUR SERVICES</h2>
-				<div class="services-grid row">
-					<div class="service col-md-3">
-						<img src="images/pexels-luis-quintero-2014773.png" alt="Sunday Service">
-						<h3>Sunday Service</h3>
-						<p>We welcome you to join us for our Sunday services at <em>12 PM</em>. May you be blessed as
-							you worship with us. In case you are unable to attend in person, we invite you to join us
-							for <em>live services</em> on <em>Facebook</em> at <em>RCCG Dominion Chapel NJ.</em></p>
-					</div>
-					<div class="service col-md-3">
-						<img src="images/pexels-johnmark-smith-250609.png" alt="Bible Study">
-						<h3>Bible Study</h3>
-						<p>You're invited to join us every <em>Tuesday</em> at <em>7 PM</em> on Zoom for our Bible study
-							session. The meeting ID is <em>789 1688 7917</em>. We look forward to seeing you there!</p>
-					</div>
-					<div class="service col-md-3">
-						<img src="images/pexels-tima-miroshnichenko-6860493.png" alt="Prayer Meetings">
-						<h3>Weekly Prayer Meetings</h3>
-						<p>Every <em>Monday, Wednesday, and Friday</em> at <em>5 AM</em>, we host weekly teleconference
-							prayer meetings. If you'd like to join us, please <em>dial</em> in using the phone code:
-							<em>+1 563 999 1485</em>. We welcome you to join us in prayer.
-						</p>
-					</div>
-					<div class="service col-md-3">
-						<img src="images/pexels-pixabay-257030.png" alt="Night Vigil">
-						<h3>Night Vigil</h3>
-						<p>To join us for our Night Vigil Services on the <em>last Friday</em> of every month, please
-							dial in using the phone code: <em>+1 563 999 1485</em>. We pray that you will be blessed as
-							you participate in our services.</p>
-					</div>
-					<div class="service col-md-3">
-						<img src="images/pexels-rodolfo-quirós-1848731.png" alt="Sunday School">
-						<h3>Sunday School</h3>
-						<p>Join us every <em>Sunday</em> for Sunday School at <em>11 AM</em> every week. Can't wait to
-							see you there!</p>
-					</div>
-				</div>
-			</section>
-
 			<section class="livestreams" id="livestreams">
 				<h2>CATCH OUR LIVESTEAMS</h2>
 				<h4>Missed a service? Not to worry, you can catch a service below!</h4>
-				<div class="livestreams-container d-flex flex-wrap justify-content-center">
+				<div class="livestreams-container d-flex flex-wrap justify-content-center" style="width: 100%;">
 					<div class="livestream-element mb-3">
 						<iframe src="https://www.youtube.com/embed/JOr-RPD48CQ?si=fNQQODn7heGWZhRA"
-							style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true"
+							style="border:none;overflow:visible" scrolling="no" frameborder="0" allowfullscreen="true"
 							allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-							allowFullScreen="true" style="width: 75%; position: absolute; top: 0; left: 0"></iframe>
+							style="width: 100%; height: auto; position: absolute; top: 0; left: 0">
+						</iframe>
 					</div>
-
-					<!-- <div id="liveStreamInfo" hx-get="latest-youtube-livestream.php" hx-trigger="load">
-					</div> -->
 
 					<div class="livestream-element mb-3">
 						<iframe
 							src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Frccgdominionchapelnj%2Fvideos%2F3811464725807129%2F&show_text=true&width=560&t=0"
 							style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true"
 							allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-							allowFullScreen="true" style="width: 75%; position: absolute; top: 0; left: 0;"></iframe>
+							style="width: 100%; height: auto;  position: absolute; top: 0; left: 0;">
+						</iframe>
 					</div>
+
+					<!-- <div id="facebook-live-streams" class="mb-3"></div>
+					<div id="youtube-live-streams" class="mb-3"></div>
+
+					<script src="livestreams.js"></script> -->
 				</div>
 			</section>
 
+			<!--Have this be arrows instead of a carosel-->
+
+			<section class="services" id="services">
+				<h2>OUR SERVICES</h2>
+				<div class="services-grid">
+					<div class="service">
+						<img src="images/pexels-skitterphoto-597056.png" alt="Sunday Service">
+						<h3>Sunday Service</h3>
+						<p>Be a part of our worship services every Sunday at 12 PM, where we gather to praise, reflect,
+							and grow in the faith together.
+							Whether you're new to the area or seeking a spiritual home, we invite you. We look forward
+							to seeing you there!
+						</p>
+					</div>
+					<div class="service">
+						<img src="images/pexels-johnmark-smith-250609.png" alt="Bible Study">
+						<h3>Bible Study</h3>
+						<p>Dive deeper into the Word with our interactive Bible study sessions, held every Tuesday at 7
+							PM.
+							No matter where you are, you can join us via Zoom for insightful discussions, spiritual
+							growth, and community connection.
+							You can click this link to join:
+							<a href="https://us02web.zoom.us/j/78916887917" target="_blank">Join via Zoom</a>
+						</p>
+					</div>
+					<div class="service">
+						<img src="images/pexels-tima-miroshnichenko-6860493.png" alt="Prayer Meetings">
+						<h3>Weekly Prayer Meetings</h3>
+						<p>Start your day with spiritual strength and upliftment at our weekly prayer meetings, held
+							every Monday, Wednesday, and Friday at 5 AM.
+							Join us in prayer from the comfort of your home by dialing <a href="#" class="copy-link"
+								id="copyLink">+1 563 999 1485</a>. We look forward to connecting with you!
+						</p>
+					</div>
+					<div class="service">
+						<img src="images/pexels-pixabay-257030.png" alt="Night Vigil">
+						<h3>Night Vigil</h3>
+						<p>Join us for an inspiring night of worship, reflection, and spiritual renewal
+							at our Night Vigil Services, held every last Friday of the month at 11 PM via telephone.
+							Dial in using the phone code: <a href="#" class="copy-link" id="copyLink">+1 563 999
+								1485</a>. We look forward to seeing you!</p>
+					</div>
+					<div class="service">
+						<img src="images/pexels-olly-3931501.png" alt="Sunday School">
+						<h3>Sunday School</h3>
+						<p>Experience the joy of learning and growing in faith at our Sunday School every Sunday at 11
+							AM.
+							Dive into engaging lessons, connect with a welcoming community, and enrich your spiritual
+							journey.
+							Whether you're new to faith or looking to deepen your understanding, our Sunday School
+							offers something
+							for everyone. We can't wait to see you there!</p>
+					</div>
+				</div>
+
+				<button class="arrow prev" onclick="moveSlide(-1)">&#10094;</button>
+				<button class="arrow next" onclick="moveSlide(1)">&#10095;</button>
+
+				<div style="text-align:center">
+					<span class="dot" onclick="currentSlide(1)"></span>
+					<span class="dot" onclick="currentSlide(2)"></span>
+					<span class="dot" onclick="currentSlide(3)"></span>
+					<span class="dot" onclick="currentSlide(4)"></span>
+					<span class="dot" onclick="currentSlide(5)"></span>
+				</div>
+			</section>
+
+			<script src="service-slides.js"></script>
+			<script src="copy-to-clipboard.js"></script>
+
 			<section class="social-media">
-				<h2>GIVE US A FOLLOW</h2>
-				<h4>Follow us on Facebook and YouTube @ RCCG Dominion Chapel NJ. Tune in and be blessed!</h4>
-				<div class="social-media-grid d-flex justify-content-center">
-					<a href="https://www.facebook.com/rccgdominionchapelnj/" target="_blank" class="me-3">
-						<i class="fab fa-facebook"></i> Visit our Facebook page
-					</a>
-					<a href="https://www.youtube.com/@rccgdominionchapelnj" target="_blank" class="me-3">
-						<i class="fab fa-youtube"></i> Visit our YouTube page
-					</a>
+				<h2>CONNECT WITH US</h2>
+				<h4>Stay up-to-date with our latest sermons, events, and community updates by following us on YouTube
+					and Facebook.</h4>
+				<div class="social-media-grid row justify-content-center">
+					<div class="social col">
+						<img src="images/pexels-freestocks-34407.png" alt="Person Opening YouTube Image">
+						<a href="https://www.youtube.com/@rccgdominionchapelnj" target="_blank">
+							<i class="fab fa-youtube"></i> Visit Our YouTube Channel
+						</a>
+						<p>Subscribe to our channel for the latest sermons, worship sessions, and more.</p>
+					</div>
+					<div class="social col">
+						<img src="images/pexels-pixabay-267482.png" alt="Facebook Login">
+						<a href="https://www.facebook.com/rccgdominionchapelnj/" target="_blank">
+							<i class="fab fa-facebook"></i> Visit Our Facebook Page
+						</a>
+						<p>Connect with our community and stay informed about our latest events and updates.</p>
+					</div>
 				</div>
 			</section>
 
@@ -171,8 +213,8 @@ User validate newsletter enteres
 				<h2>OUR PASTORS</h2>
 				<h4>Our team of ministers is dedicated to serving our community and providing spiritual guidance to
 					those in need. They bring a wealth of experience, knowledge, and compassion to their work, and we
-					are proud to have them as part of our team.</h4>
-
+					are proud to have them as part of our team.
+				</h4>
 				<div class="pastor-grid row">
 					<div class="pastor mb-3 col">
 						<img src="images/2023-05-24 18_20_54-4102242234662347391684959763246.png - paint.net 5.0.3.png"
@@ -198,7 +240,11 @@ User validate newsletter enteres
 
 			<section class="giving" id="giving">
 				<h2>WAYS TO GIVE</h2>
-				<h4>Thank you for your generosity!</h4>
+				<h4>Your generous contributions play a vital role in supporting our church and its missions.
+					Through your giving, we are able to fund various outreach programs, community services,
+					and maintain our place of worship. We are deeply grateful for your support and commitment
+					to our shared mission. Together, we can continue to make a positive impact
+					and spread the message of love and hope. Thank you for your kindness and generosity.</h4>
 
 				<div class="giving-grid row">
 					<div class="give col">
@@ -228,11 +274,11 @@ User validate newsletter enteres
 			</section>
 		</main>
 
-		<footer class="bg-dark">
+		<footer>
 			<section class="contact" id="contact">
 				<div class="contact-section col">
 					<h3 class="fw-bold">Newsletter</h3>
-					<h4>Join our email newsletters</h4>
+					<h4>Sign up for our newsletter to stay up-to-date with our latest news and events.</h4>
 
 					<form class="d-grid" method="POST" id="newsletter-form">
 						<fieldset>
@@ -251,17 +297,27 @@ User validate newsletter enteres
 
 				<div class="contact-section col">
 					<h3 class="fw-bold">Contact Us</h3>
-					<h4>Address</h4>
-					<a
-						href="https://www.google.com/maps/dir/39.7049856,-75.12064/rccg+dominion+chapel+galloway+nj/@39.5665626,-75.0808138,10z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x89c0e5ec1579dcf3:0xc67df2cb160f53e5!2m2!1d-74.4806106!2d39.4384699">
-						614 South New York Rd Galloway, NJ 08205
-					</a>
-					<h4>Phone Number</h4>
-					<a href="tel:+18624529231">(862) 452-9231</a>
-					<h4>Email Address</h4>
-					<a href="mailto:rccggalloway@gmail.com">rccggalloway@gmail.com</a>
-					<h4>Fax Number</h4>
-					<a href="fax:+19736728988">(973) 672-8988</a>
+					<div class="row">
+						<a target="_blank" href="https://www.google.com/maps/dir/39.7049856,-75.12064/rccg+dominion+chapel+galloway+nj/@39.5665626,-75.0808138,10z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x89c0e5ec1579dcf3:0xc67df2cb160f53e5!2m2!1d-74.4806106!2d39.4384699">
+							<i class="fas fa-map-marker-alt"></i> 
+							614 South New York Rd Galloway, NJ 08205
+						</a>
+					</div>
+					<div class="row">
+						<a href="tel:+18624529231">
+							<i class="fas fa-phone-alt"></i> (862) 452-9231
+						</a>
+					</div>
+					<div class="row">
+						<a href="mailto:rccggalloway@gmail.com">
+							<i class="fas fa-envelope"></i> rccggalloway@gmail.com
+						</a>
+					</div>
+					<div class="row">
+						<a href="fax:+19736728988">
+							<i class="fas fa-fax"></i> (973) 672-8988
+						</a>
+					</div>
 				</div>
 
 				<div class="contact-section col">
@@ -277,8 +333,8 @@ User validate newsletter enteres
 				</div>
 			</section>
 
-			<div class="nav_copyright">
-				<div>
+			<div class="nav_copyright row">
+				<div class="col">
 					<span id="copyright">
 						&copy;
 						<script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script>
@@ -288,7 +344,16 @@ User validate newsletter enteres
 					</span>
 				</div>
 
-				<div>
+				<div class="navbar-icons col">
+					<a href="https://www.facebook.com/rccgdominionchapelnj/" target="_blank">
+						<i class="fab fa-facebook"></i>
+					</a>
+					<a href="https://www.youtube.com/@rccgdominionchapelnj" target="_blank">
+						<i class="fab fa-youtube"></i>
+					</a>
+				</div>
+
+				<div class="col">
 					<ul>
 						<li><a href="#navbar">HOME</a></li>
 						<li><a href="#about">ABOUT</a></li>
@@ -298,18 +363,7 @@ User validate newsletter enteres
 						<li><a href="#contact">CONTACT</a></li>
 					</ul>
 				</div>
-
-				<!-- <div>
-						<div class="navbar-icons">
-							<a href="#" class="icon"><i class="fas fa-search"></i></a>
-							<a href="https://www.facebook.com/rccgdominionchapelnj/" class="icon"><i
-									class="fab fa-facebook"></i></a>
-							<a href="https://www.youtube.com/@rccgdominionchapelgalloway5899/featured" class="icon"><i
-									class="fab fa-youtube"></i></a>
-						</div>
-					</div> -->
 			</div>
 		</footer>
 	</body>
-
 </html>

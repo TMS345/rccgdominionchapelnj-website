@@ -1,8 +1,3 @@
-/* head
-{
-  background-color: white;
-} */
-
 @font-face 
 {
   font-family: 'Jost';
@@ -27,16 +22,12 @@
 html
 {
   width: 100%;
-  max-width: 100%;
-  height: 100%;
-  max-height: 100%;
-  margin-right: 0rem;
-  margin-left: 0rem;
-  margin-top: 0rem;
-  margin-bottom: 0rem;
+  height: auto;
+  margin: 0;
+  padding: 0;
   align-items: center;
   align-content: center;
-  overflow: visible;
+  overflow: auto;
   background-color: transparent;
 }
 
@@ -120,6 +111,7 @@ footer
   padding: 0rem;
   margin: 0rem;
   border: none;
+  background-color: black;
 }
 
 footer h2
@@ -210,8 +202,8 @@ section
   transform: scale(1.01);
   cursor: pointer;
   color: white;
-  background-color: wheat;
-  border-color: wheat;
+  background-color: black;
+  border-color: black;
 }
 
 @media (max-width: 576px) {
@@ -250,27 +242,11 @@ section
   font-size: 1rem;
 }
 
-.contact
-{
-  color: white;
-  height: auto;
-  width: 100%;
-  align-content: center;
-  text-align: center;
-  justify-content: center;
-  font-family: "Jost", sans-serif;
-  font-weight: normal;
-  display: flex;
-  background-color: transparent;
-  box-shadow: transparent;
-  border: none;
-}
-
 .contact-section
 {
   border: none;
-  padding-right: 1rem;
-  padding-left: 1rem;
+  padding-right:.5rem;
+  padding-left: .5rem;
   width: 100%;
 }
 
@@ -288,13 +264,6 @@ section
   align-items: center;
   text-align: center;
   align-content: center;
-}
-
-.contact textarea
-{
-  background-color: transparent;
-  border-color: white;
-  color: white;
 }
 
 .contact-section button 
@@ -324,9 +293,9 @@ section
   transition: box-shadow 1s ease-in-out;
   transform: scale(1.01);
   cursor: pointer;
-  color: black;
-  background-color: wheat;
-  border-color: wheat;
+  color: white;
+  background-color: black;
+  border-color: black;
 }
 
 .contact-section h3
@@ -373,13 +342,35 @@ section
   width: 100%;
 }
 
+.contact textarea
+{
+  background-color: transparent;
+  border-color: white;
+  color: white;
+}
+
+.contact
+{
+  color: white;
+  height: auto;
+  width: 100%;
+  align-content: center;
+  text-align: center;
+  justify-content: center;
+  font-family: "Jost", sans-serif;
+  font-weight: normal;
+  display: flex;
+  background-color: transparent;
+  box-shadow: transparent;
+  border: none;
+}
+
 .contact a
 {
   text-decoration: none;
   font-size: .7rem;
   font-weight: normal;
   text-transform: none;
-  display: inline-grid;
   font-family: "Jost", sans-serif;
   padding-bottom: .5rem;
   padding-top: .5rem;
@@ -407,8 +398,8 @@ section
 
 .google-map iframe 
 {
-  height: 100%;
-  max-width: 100%;
+  width: 100%;
+  height: auto;
   background-color: transparent;
   align-content: center;
   justify-content: center;
@@ -421,8 +412,6 @@ section
   display: flex;  
   justify-content: space-between;
   align-items: center;
-  /* align-items: center; */
-  /* flex-wrap: nowrap; */
   border: none;
   background-color: transparent;
   color: white;
@@ -431,20 +420,29 @@ section
   padding: 0rem;
 }
 
-.nav_copyright .navbar-icons
+.nav_copyright .navbar-icons a
 {
-  background-color: transparent;
+  color: white;
   align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: .5rem;
 }
+
+.nav_copyright .navbar-icons a:hover
+{
+  color: wheat
+}
+
 
 .nav_copyright div ul
 {
   font-style: normal;
-  flex-direction: column;
-  /* display: block; */
+  flex-direction: row;
+  display: flex;
   background-color: transparent;
   margin: 0rem;
-  /* align-content: center; */
+  align-content: center;
   justify-content: center;
   padding-right: 2rem;
 }
@@ -511,6 +509,7 @@ section
   border-radius: 50%;
   border: .1rem;
   width: 65%;
+  height: auto;
   box-shadow: none;
   transition: transform 0.2s;
   padding-bottom: 0rem;
@@ -741,13 +740,12 @@ section
   transform: scale(1.1);
 }
 
-.services
+.services 
 {
-  width: 100%;
-  height: 100%;
-  background-color: transparent;
-  margin-bottom: 0rem;
-  box-shadow: none;
+  position: relative;
+  max-width: 100%;
+  overflow: visible;
+  margin: auto;
 }
 
 .services h2
@@ -764,55 +762,21 @@ section
 
 .services-grid 
 {
-  grid-template-columns: repeat(auto-fit, minmax(3rem, 1fr));
-  gap: 1rem;
-  flex-wrap: wrap;
-  height: 100%;
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  /* height: 50rem; */
   width: 100%;
-  text-align: center;
-  justify-content: center;
-  align-content: center;
 }
 
 .service 
 {
-  background-color: #f7f7f7;
-  padding: 1rem;
-  border-radius: .1rem;
-  box-shadow: 0rem .2rem .6rem rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
   text-align: center;
-  justify-content: center;
-  align-content: center;
-  box-sizing: content-box;
-  width: 75%;
-  height: 75%;
-}
-
-.service h3
-{
-  font-style: normal;
-  padding-top: 1rem;
-  font-size: 1.2rem;
-  width: auto;
-  color: black;
-  font-family: "Jost", sans-serif;
-}
-
-.service p
-{
-  font-style: normal;
-  padding-top: 0rem;
-  font-size: .8rem;
-  width: auto;
-  color: black;
-  font-family: "Jost", sans-serif;
-}
-
-.service em
-{
-  font-weight: bold;
-  color: indianred;
-  font-style: normal;
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: transform 0.5s ease-in-out;
 }
 
 .service img
@@ -820,16 +784,91 @@ section
   border-radius: 0%;
   border: 1rem;
   width: 100%;
-  height: 100%;
+  height: auto;
   box-shadow: .3rem .3rem .5rem grey;
-  transition: transform 0.2s;
   padding-bottom: 0rem;
   padding-top: 0rem;
-  display: inline-flex;
 }
 
-.service img:hover {
-  transform: scale(1.05);
+.service img:hover 
+{
+  transform: scale(1.01);
+}
+
+.service h3
+{
+  font-style: normal;
+  padding-top: 1rem;
+  font-size: 1.5rem;
+  width: auto;
+  color: black;
+  font-family: "Jost", sans-serif;
+  position: relative;
+}
+
+.service p
+{
+  font-style: normal;
+  padding-top: 0rem;
+  font-size: 1rem;
+  width: auto;
+  color: black;
+  font-family: "Jost", sans-serif;
+  position: relative;
+}
+
+.copy-link
+{
+  font-weight: normal;
+  color: blue;
+  font-style: normal;
+}
+
+.copy-link:hover
+{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.arrow 
+{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  background-color: black;
+  color: white;
+  border: none;
+  padding: .5rem;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.prev 
+{
+  left: 10px;
+}
+
+.next 
+{
+  right: 10px;
+}
+
+.dot 
+{
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover 
+{
+  background-color: #717171;
 }
 
 .column
@@ -839,16 +878,12 @@ section
 
 .navbar 
 {
-  z-index: 2;
-  display: inline-flex;
   position: relative;
 }
 
 .navbar-brand 
 {
-  margin-right: 0rem;
-  margin-left: 1rem;
-  background-color: transparent;
+  background-color:  transparent;
   font-family: "Jost", sans-serif;
   color: inherit;
   text-decoration: none;
@@ -858,6 +893,7 @@ section
 {
   max-width: 25%;
   height: auto;
+  background-color: transparent;
 }
 
 .navbar-brand:hover
@@ -869,11 +905,8 @@ section
 
 .navbar-nav 
 {
-  margin: 0rem 30% auto;
-  margin-top: 0rem;
-  margin-bottom: 0rem;
+  margin-right: 0;
   display: flex;
-  align-items: center;
   background-color: transparent;
 }
 
@@ -892,8 +925,18 @@ section
   border: none;
   color: wheat;
 }
+
+.navbar-toggler 
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 2rem;
+}
+
 /* 
-.loader {
+.loader 
+{
   position: relative;
   width: 80px;
   margin: 100px auto;
@@ -946,7 +989,7 @@ section
 
 .livestream-element 
 {
-  margin-right: 1rem;
+  margin-right: 2rem;
 }
 
 .social-media h2
@@ -981,12 +1024,23 @@ section
   width: 30%;
   height: 30%;
   background-color: transparent;
-  margin-left: 1.2rem;
-  margin-right: .5rem;
   align-items: center;
-  text-align: center;
-  justify-content: center;
+  text-align: left;
   font-family: "Jost", sans-serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.social-media p
+{
+  font-style: normal;
+  font-weight: normal;
+  color: black;
+  padding-top: .5rem;
+  font-size: 1rem;
+  font-family: "Jost", sans-serif;
+  align-items: center;
+  text-align: left;
 }
 
 .social-media a:hover
@@ -996,4 +1050,21 @@ section
   background-color: transparent;
   transition: border-radius 0.0s ease-in-out;
   font-family: "Jost", sans-serif;
+}
+
+.social-media img
+{
+  border: .1rem;
+  width: 100%;
+  height: auto;
+  box-shadow: none;
+  transition: transform 0.2s;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.social
+{
+  border-radius: .5rem;
+  box-shadow: 0 0 .5rem rgba(71, 60, 60, 0.1);
 }
