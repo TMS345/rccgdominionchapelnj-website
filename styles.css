@@ -1,0 +1,1040 @@
+@font-face 
+{
+  font-family: 'Jost';
+
+  src: url('fonts/Jost-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face 
+{
+  font-family: 'Teachers';
+
+  src: url('fonts/Teachers-VariableFont_wght.ttf') format('truetype');
+}
+
+@font-face 
+{
+  font-family: 'Garamond';
+
+  src: url('fonts/EBGaramond-Regular.ttf') format('truetype');
+}
+
+html
+{
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  align-content: center;
+  overflow-x: hidden;
+  background-color: transparent;
+}
+
+.html-site::-webkit-scrollbar 
+{
+  display: flex;
+  overflow: scroll;
+}
+
+.html-site::-webkit-scrollbar-track 
+{
+  background-color: #f1f1f1;
+}
+
+/* Define the styles for the scrollbar thumb */
+
+.html-site::-webkit-scrollbar-thumb 
+{
+  background-color: #888;
+  border-radius: 5px;
+}
+
+/* Define the styles for the scrollbar corner */
+
+.html-site::-webkit-scrollbar-corner 
+{
+  background-color: lightgrey;
+}
+
+.html-site::-webkit-resizer 
+{
+  background: #ccc;
+  border-radius: 10px;
+}
+
+body h1, h2, h3, p
+{
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+a 
+{
+  color: #333;
+  text-decoration: none;
+  margin-bottom: 0px;
+}
+
+body header
+{
+  background-color: transparent;
+}
+
+ul 
+{
+  list-style-type: none;
+}
+
+main
+{
+  background-color: transparent;
+}
+
+body 
+{
+  background-color: transparent;
+  font-family: "Jost", sans-serif;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  align-items: center;
+}
+
+section 
+{
+  width: 100%;
+  margin: 0 0;
+  padding: 2rem;
+  background-color: transparent;
+  box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.1);
+  height: auto;
+}
+
+.welcome-hero 
+{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: none;
+  background-color: transparent;
+  width: auto;
+  background-image: url("images/pexels-chad-kirchoff-346647-952437.png");
+  background-size: cover;
+  background-position: center;
+}
+
+/* .welcome-hero img
+{
+  max-width:100%;
+  height:100%;
+  position: relative;
+  object-fit: cover;
+  object-position: center;
+  justify-self: center;
+}*/
+
+.welcome-hero h1
+{
+  font-family: 'Jost', sans-serif;
+  position: relative; /* Make text overlay absolute relative to its container */
+  /* top: 90%;
+  left: 50%;*/
+  /* transform: translate(-50%, -50%); */
+  color: white; /* Example text color for contrast */
+  vertical-align: top;
+  font-size: 4.5em;
+  margin-bottom: 2rem;
+  z-index: 1;
+}
+
+.welcome-hero p 
+{
+  color: white; /* Example text color for contrast */
+  font-family: 'Jost', sans-serif;
+  position: relative;
+  z-index: 1;
+  font-size: 1.2rem; /* Adjust font size as needed */
+}
+
+.welcome-hero button 
+{
+  padding: 0;
+  margin-bottom: 2rem;
+  margin-top: 0;
+  margin-right: 0;
+  border: .3rem solid white;
+  border-radius: .2rem;
+  font-size: .8rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: black;
+  background-color: white;
+  align-content: center;
+  width: 15%;
+}
+
+.welcome-hero button:hover 
+{
+  transition: box-shadow 1s ease-in-out;
+  transform: scale(1);
+  cursor: pointer;
+  color: black;
+  background-color: whitesmoke;
+  border: .3rem solid whitesmoke;
+}
+
+@media (max-width: 576px) {
+  .welcome-hero h1{
+    font-size: 2.4em;
+  }
+}
+
+@media (max-width: 768px) {
+  .welcome-hero h1{
+    font-size: 2.8em;
+  }
+}
+
+@media (max-width: 992px) {
+  .welcome-hero h1{
+    font-size: 3.2em;
+  }
+}
+
+@media (max-width: 1200px) {
+  .welcome-hero h1{
+    font-size: 3.6;
+  }
+}
+
+.about h2
+{
+  font-family: 'Jost', sans-serif;
+  font-size: 1.8rem;
+}
+
+.about p
+{
+  font-family: 'Jost', sans-serif;
+  font-size: 1rem;
+}
+
+footer
+{
+  height: auto;
+  max-width: 100%;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: black;
+}
+
+footer h2
+{
+  color: white;
+}
+
+.contact
+{
+  color: white;
+  height: auto;
+  width: 100%;
+  font-family: "Jost", sans-serif;
+  font-weight: normal;
+  background-color: transparent;
+  box-shadow: transparent;
+  border: none;
+}
+
+.contact textarea
+{
+  background-color: transparent;
+  border-color: white;
+  color: white;
+}
+
+.contact-section
+{
+  border: none;
+  padding-right: .5rem;
+  padding-left: .5rem;
+  width: 100%;
+  text-align: left;
+  justify-content: left;
+  align-items: left;
+}
+
+.contact-section form input::placeholder 
+{
+  color: black;
+}
+
+.contact-section form button 
+{
+  margin: 0;
+  padding: 0;
+  border: .3rem solid white;
+  border-radius: .3rem;
+  font-size: .8rem;
+  font-weight: normal;
+  text-transform: none;
+  color: black;
+  background-color: white;
+  align-content: center;
+  width: 25%;
+  flex-wrap: wrap;
+}
+
+.contact-section form button:hover 
+{
+  transition: box-shadow 1s ease-in-out;
+  transform: scale(1);
+  cursor: pointer;
+  color: black;
+  background-color: whitesmoke;
+  border: .3rem solid whitesmoke;
+}
+
+.contact-section h2
+{
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-right: 0;
+
+}
+
+.contact-section h3
+{
+  background-color: transparent;
+  text-align: left;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.2rem;
+  font-weight: lighter;
+  padding-right: 0;
+  margin-bottom: .2rem;
+}
+
+.contact-section h4
+{
+  margin-top: .5rem;
+  font-size: .9rem;
+}
+
+.contact-section input
+{
+  align-items: top;
+  background-color: white;
+  padding: 0rem 0rem 0rem 0rem;
+  border-radius: .3rem;
+  width: auto;
+  height: auto;
+  font-size: .9rem;
+}
+
+.contact-section form
+{
+  background-color: transparent;
+  padding-top: .2rem;
+  align-items: center;
+  width: auto;
+}
+
+.contact-section form input
+{
+  margin-bottom: .5rem;
+  font-family: "Jost", sans-serif;
+  width: 25%;
+}
+
+.contact-section .navbar-icons a
+{
+  color: white;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  margin: .1rem;
+  font-size: 1rem;
+  padding: 0;
+}
+
+.contact-section .navbar-icons a:hover
+{
+  color: wheat
+}
+
+.contact-section a
+{
+  text-decoration: none;
+  font-size: .8rem;
+  font-weight: normal;
+  text-transform: none;
+  font-family: "Jost", sans-serif;
+  padding-bottom: .2rem;
+  padding-top: .3rem;
+  color: white;
+}
+
+.contact-section a:hover
+{
+  background-color: transparent;
+  border-radius: 1rem;
+  border: none;
+  transition: border-radius 0.0s ease-in-out;
+  color: wheat;
+  text-decoration: none;
+}
+
+.contact-section a button 
+{
+  margin: 0;
+  padding: 0;
+  border: .3rem solid white;
+  border-radius: .3rem;
+  font-size: .8rem;
+  font-weight: normal;
+  text-transform: none;
+  color: black;
+  background-color: white;
+  align-content: center;
+  width: 25%;
+  flex-wrap: wrap;
+}
+
+.contact-section a button:hover 
+{
+  transition: box-shadow 1s ease-in-out;
+  transform: scale(1);
+  cursor: pointer;
+  color: black;
+  background-color: whitesmoke;
+  border: .3rem solid whitesmoke;
+}
+
+.contact-section ul
+{
+  font-style: normal;
+  flex-direction: column;
+  display: flex;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  align-content: center;
+  justify-content: center;
+}
+
+.contact-section ul li
+{
+  flex-direction: row;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.contact-section ul li a
+{
+  margin: 0;
+  color: white;
+  text-decoration: none;
+  font-family: 'Jost', sans-serif;
+  font-size: .7rem;
+  font-weight: normal;
+}
+
+.contact-section ul li a:hover
+{
+  background-color: transparent;
+  border: none;
+  border-radius: 0rem;
+  transition: border-radius 0.0s ease-in-out;
+  color: wheat;
+  text-decoration: none;
+}
+
+.nav_copyright
+{
+  display: flex;  
+  border: none;
+  background-color: transparent;
+}
+
+.nav_copyright span
+{
+  font-style: normal;
+  font-size: .7rem;
+  font-weight: normal;
+  color: white;
+  background-color: transparent;
+  font-family: 'Jost', sans-serif; 
+  text-align: center;
+  justify-content: top;
+  align-items: top;
+  align-content: top;
+  margin-bottom: 1rem;
+}
+
+.pastor-image
+{
+  border-radius: 50%;
+  border: .1rem;
+  width: 65%;
+  height: auto;
+  box-shadow: none;
+  transition: transform 0.2s;
+  padding-bottom: 0rem;
+  padding-top: 0rem;
+  display: inline-flex;
+}
+
+.pastor-image:hover
+{
+  transform: scale(1.05);
+}
+
+.pastors
+{
+  background-color: transparent;
+  font-family: 'Jost', sans-serif;
+}
+
+.pastors h2
+{
+  background-color: transparent;
+  color: black;
+  font-size: 1.8erm;
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+  padding-top: .1rem;
+  padding-bottom: 0rem;
+  font-weight: bold;
+}
+
+.pastors h4
+{
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: normal;
+  color: black;
+  padding: 0prem;
+  margin-top: .1rem;
+  margin-bottom: 1rem;
+  font-family: "Jost", sans-serif;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.pastors h5
+{
+  font-size: .95rem;
+  font-style: normal;
+  font-weight: bold;
+  color: black;
+  margin: 0rem;
+  padding-bottom: .1rem;
+}
+
+.pastors h6
+{
+  font-size: .9rem;
+  font-style: normal;
+  font-weight: normal;
+  color: black;
+  margin: 0rem;
+  padding-bottom: .1rem;
+}
+
+.pastors h4, h5, img
+{
+  display: inherit;
+}
+
+.pastor-grid
+{
+  display: block;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 0px;
+  height: auto;
+  background-color: transparent;
+}
+
+.pastor
+{
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  align-items: center;
+}
+
+#loading-screen 
+{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.giving
+{
+  background-color: transparent;
+  font-family: 'Jost', sans-serif;
+}
+
+.giving h2
+{
+  font-weight: bold;
+  font-style: normal;
+  font-size: 1.8rem;
+}
+
+.giving a, h3
+{
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1.5rem;
+}
+
+.giving h4
+{
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.giving h4
+{
+  font-weight: normal;
+  font-style: normal;
+  font-size: 1rem;
+}
+
+.giving img
+{
+  border-radius: 50%;
+  border: 10px;
+  max-width: 25%;
+  max-height: 25%;
+  box-shadow: 3px 3px 5px grey;
+  transition: transform 0.2s;
+  padding-bottom: auto;
+  padding-top: auto;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: inline-flex;
+  align-items: center;
+  align-self: center;
+}
+
+.giving .icon
+{
+  margin-right: 5px;
+}
+
+.giving a
+{
+    text-decoration: none;
+}
+
+.giving a:hover
+{
+  padding-bottom: 0px;
+  padding-top: 0px;
+  border-radius: 10px;
+  border: 1px transparent #000;
+  background-color: transparent;
+  transition: border-radius 0.0s ease-in-out;
+}
+
+.giving img:hover
+{
+  transform: scale(1.1);
+}
+
+.giving-grid
+{
+  display: block;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 0rem;
+  height: auto;
+  background-color: transparent;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+
+.give
+{
+  background-color: white;
+  padding: .5rem;
+  border-radius: .5rem;
+  box-shadow: 0rem .2rem .6rem rgba(0, 0, 0, 0.1);
+  text-align: center;
+  box-sizing: border-box;
+  width: auto;
+  height: auto;
+  display: grid;
+}
+
+#return-img img
+{
+  border-radius: 50%;
+  border: 10px;
+  width: 5%;
+  height: 5%;
+  padding: 0px;
+  box-shadow: 3px 3px 5px grey;
+  transition: transform 0.2s;
+  padding-bottom: 0px;
+  padding-top: 0px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+#return-img img:hover
+{
+  transform: scale(1.1);
+}
+
+.services 
+{
+  position: relative;
+  max-width: 100%;
+  overflow: visible;
+  margin: auto;
+}
+
+.services h2
+{
+  font-size: 1.8rem;
+  background-color: transparent;
+  color: black;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-family: "Jost", sans-serif;
+}
+
+.services-grid 
+{
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  /* height: 50rem; */
+  width: 100%;
+}
+
+.service 
+{
+  box-sizing: border-box;
+  text-align: center;
+  padding: 1rem;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  transition: transform 0.5s ease-in-out;
+}
+
+.service img
+{
+  border-radius: 0%;
+  border: 1rem;
+  width: 100%;
+  height: auto;
+  box-shadow: .3rem .3rem .5rem grey;
+  padding-bottom: 0rem;
+  padding-top: 0rem;
+}
+
+.service img:hover 
+{
+  transform: scale(1.01);
+}
+
+.service h3
+{
+  font-style: normal;
+  padding-top: 1rem;
+  font-size: 1.5rem;
+  width: auto;
+  color: black;
+  font-family: "Jost", sans-serif;
+  position: relative;
+}
+
+.service p
+{
+  font-style: normal;
+  padding-top: 0rem;
+  font-size: 1rem;
+  width: auto;
+  color: black;
+  font-family: "Jost", sans-serif;
+  position: relative;
+}
+
+.copy-link
+{
+  font-weight: normal;
+  color: blue;
+  font-style: normal;
+}
+
+.copy-link:hover
+{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.arrow 
+{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+  background-color: transparent;
+  color: black;
+  border: none;
+  padding: .5rem;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.prev 
+{
+  left: 10px;
+}
+
+.next 
+{
+  right: 10px;
+}
+
+.dot 
+{
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover 
+{
+  background-color: #717171;
+}
+
+.column
+{
+  flex-wrap: nowrap;
+}
+
+.navbar 
+{
+  position: relative;
+}
+
+.navbar-brand 
+{
+  background-color:  transparent;
+  font-family: "Jost", sans-serif;
+  color: inherit;
+  text-decoration: none;
+}
+
+.navbar-brand img 
+{
+  max-width: 25%;
+  height: auto;
+  background-color: transparent;
+}
+
+.navbar-brand:hover
+{
+  text-decoration: none;
+  color: white;
+  cursor: default;
+}
+
+.navbar-nav 
+{
+  margin-right: 0;
+  display: flex;
+  background-color: transparent;
+}
+
+.navbar-nav .nav-item .nav-link 
+{
+  margin-right: .5rem;
+  text-align: center;
+  font-family: "Jost", sans-serif;
+  background-color: transparent;
+  color: black;
+  font-size: 1rem;
+}
+
+.navbar-nav .nav-item .nav-link:hover
+{
+  border: none;
+  color: wheat;
+}
+
+.navbar-toggler 
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 2rem;
+}
+
+/* 
+.loader 
+{
+  position: relative;
+  width: 80px;
+  margin: 100px auto;
+} */
+
+.livestreams
+{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: transparent;
+}
+
+.livestreams h2
+{
+  background-color: transparent;
+  color: black;
+  font-size: 1.8rem;
+  padding-top: 1rem;
+  font-weight: bold;
+  font-family: "Jost", sans-serif;
+}
+
+.livestreams h4
+{
+  font-style: normal;
+  font-weight: normal;
+  color: black;
+  padding: 1rem;
+  font-size: 1rem;
+  font-family: "Jost", sans-serif;
+}
+
+.livestreams img
+{
+  border-radius: 5%;
+  border: .1rem;
+  max-width: 100%;
+  max-height: 100%;
+  box-shadow: .3rem .3rem .5rem grey;
+  transition: transform 0.2s;
+  padding: 0rem;
+  margin: 0rem;
+}
+
+.livestreams img:hover
+{
+  transform: scale(1.05);
+}
+
+.livestream-element 
+{
+  margin-right: 2rem;
+}
+
+.social-media h2
+{
+  background-color: transparent;
+  color: black;
+  font-size: 1.7rem;
+  padding-top: 1rem;
+  font-weight: bold;
+  font-family: "Jost", sans-serif;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.social-media h4
+{
+  font-style: normal;
+  font-weight: normal;
+  color: black;
+  padding: 1rem;
+  font-size: 1rem;
+  font-family: "Jost", sans-serif;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.social-media a
+{
+  text-decoration: none;
+  width: 30%;
+  height: 30%;
+  background-color: transparent;
+  align-items: center;
+  text-align: left;
+  font-family: "Jost", sans-serif;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.social-media p
+{
+  font-style: normal;
+  font-weight: normal;
+  color: black;
+  padding-top: .5rem;
+  font-size: 1rem;
+  font-family: "Jost", sans-serif;
+  align-items: center;
+  text-align: left;
+}
+
+.social-media a:hover
+{
+  border-radius: 1rem;
+  border: 1rem transparent #000;
+  background-color: transparent;
+  transition: border-radius 0.0s ease-in-out;
+  font-family: "Jost", sans-serif;
+}
+
+.social-media img
+{
+  border: .1rem;
+  width: 100%;
+  height: auto;
+  box-shadow: none;
+  transition: transform 0.2s;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.social
+{
+  border-radius: .5rem;
+  box-shadow: 0 0 .5rem rgba(71, 60, 60, 0.1);
+}
