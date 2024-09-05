@@ -212,7 +212,7 @@ section
 .about h2
 {
   font-family: 'Jost', sans-serif;
-  font-size: 1.8rem;
+  font-size: 3rem;
 }
 
 .about p
@@ -478,13 +478,16 @@ footer h2
 {
   border-radius: 50%;
   border: .1rem;
-  width: 65%;
+  width: 20%;
   height: auto;
   box-shadow: none;
   transition: transform 0.2s;
-  padding-bottom: 0rem;
-  padding-top: 0rem;
-  display: inline-flex;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
 }
 
 .pastor-image:hover
@@ -494,7 +497,7 @@ footer h2
 
 .pastors
 {
-  background-color: transparent;
+  background-color: white;
   font-family: 'Jost', sans-serif;
 }
 
@@ -502,15 +505,51 @@ footer h2
 {
   background-color: transparent;
   color: black;
-  font-size: 1.8erm;
+  font-size: 3rem;
   margin-top: .5rem;
   margin-bottom: 1rem;
   padding-top: .1rem;
-  padding-bottom: 0rem;
+  padding-bottom: 0;
   font-weight: bold;
 }
 
 .pastors h4
+{
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: normal;
+  color: black;
+  padding: 0prem;
+  margin-top: .1rem;
+  margin-bottom: 1rem;
+  font-family: "Jost", sans-serif;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.pastor
+{
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  background-color: white;
+}
+
+.pastor h3
+{
+  background-color: transparent;
+  color: black;
+  font-size: 1.6erm;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+  padding-top: .1rem;
+  padding-bottom: 0;
+  font-weight: bold;
+}
+
+.pastor h4
 {
   font-size: 1rem;
   font-style: normal;
@@ -525,47 +564,43 @@ footer h2
   justify-content: center;
 }
 
-.pastors h5
+.pastor h5
 {
-  font-size: .95rem;
-  font-style: normal;
-  font-weight: bold;
-  color: black;
-  margin: 0rem;
-  padding-bottom: .1rem;
-}
-
-.pastors h6
-{
-  font-size: .9rem;
+  font-size: 1.2rem;
   font-style: normal;
   font-weight: normal;
   color: black;
-  margin: 0rem;
-  padding-bottom: .1rem;
+  margin: 0;
+  padding-bottom: .5rem;
 }
 
-.pastors h4, h5, img
+.pastor h6
 {
-  display: inherit;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: normal;
+  color: black;
+  margin: 0;
+  padding-bottom: .5rem;
+}
+
+.pastor a, .pastor i
+{
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: black;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  margin-right: .3rem;
 }
 
 .pastor-grid
 {
-  display: block;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 0px;
   height: auto;
   background-color: transparent;
-}
-
-.pastor
-{
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  align-items: center;
 }
 
 #loading-screen 
@@ -593,10 +628,10 @@ footer h2
 {
   font-weight: bold;
   font-style: normal;
-  font-size: 1.8rem;
+  font-size: 3rem;
 }
 
-.giving a, h3
+.giving a, .givingh3
 {
   font-weight: normal;
   font-style: normal;
@@ -607,17 +642,10 @@ footer h2
 {
   font-weight: normal;
   font-style: normal;
-  font-size: 1rem;
+  font-size: 1.3rem;
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-
-.giving h4
-{
-  font-weight: normal;
-  font-style: normal;
-  font-size: 1rem;
 }
 
 .giving img
@@ -720,7 +748,7 @@ footer h2
 
 .services h2
 {
-  font-size: 1.8rem;
+  font-size: 3rem;
   background-color: transparent;
   color: black;
   padding-top: 1rem;
@@ -753,7 +781,7 @@ footer h2
 {
   border-radius: 0%;
   border: 1rem;
-  width: 100%;
+  width: 75%;
   height: auto;
   box-shadow: .3rem .3rem .5rem grey;
   padding-bottom: 0rem;
@@ -924,7 +952,7 @@ footer h2
 {
   background-color: transparent;
   color: black;
-  font-size: 1.8rem;
+  font-size: 3rem;
   padding-top: 1rem;
   font-weight: bold;
   font-family: "Jost", sans-serif;
@@ -936,7 +964,7 @@ footer h2
   font-weight: normal;
   color: black;
   padding: 1rem;
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-family: "Jost", sans-serif;
 }
 
@@ -966,7 +994,7 @@ footer h2
 {
   background-color: transparent;
   color: black;
-  font-size: 1.7rem;
+  font-size: 3rem;
   padding-top: 1rem;
   font-weight: bold;
   font-family: "Jost", sans-serif;
@@ -981,7 +1009,7 @@ footer h2
   font-weight: normal;
   color: black;
   padding: 1rem;
-  font-size: 1rem;
+  font-size: 1.3rem;
   font-family: "Jost", sans-serif;
   align-items: center;
   text-align: center;
@@ -999,6 +1027,7 @@ footer h2
   font-family: "Jost", sans-serif;
   font-size: 1.3rem;
   font-weight: bold;
+  text-wrap: nowrap;
 }
 
 .social-media p
@@ -1025,7 +1054,7 @@ footer h2
 .social-media img
 {
   border: .1rem;
-  width: 100%;
+  width: 75%;
   height: auto;
   box-shadow: none;
   transition: transform 0.2s;
