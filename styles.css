@@ -147,6 +147,7 @@ section
   font-size: 4.5em;
   margin-bottom: 2rem;
   z-index: 1;
+  margin-top: 10rem;
 }
 
 .welcome-hero p 
@@ -156,23 +157,24 @@ section
   position: relative;
   z-index: 1;
   font-size: 1.2rem; /* Adjust font size as needed */
+  margin-bottom: 10rem;
 }
 
 .welcome-hero button 
 {
-  padding: 0;
+  padding: .5rem .5rem;
   margin-bottom: 2rem;
   margin-top: 0;
   margin-right: 0;
-  border: .3rem solid white;
+  border: .5rem solid white;
   border-radius: .2rem;
-  font-size: .8rem;
-  font-weight: bold;
-  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: none;
   color: black;
   background-color: white;
   align-content: center;
-  width: 15%;
+  width: auto;
 }
 
 .welcome-hero button:hover 
@@ -180,12 +182,9 @@ section
   transition: box-shadow 1s ease-in-out;
   transform: scale(1);
   cursor: pointer;
-  color: black;
-  background-color: whitesmoke;
-  border: .3rem solid whitesmoke;
 }
 
-@media (max-width: 576px) {
+/* @media (max-width: 576px) {
   .welcome-hero h1{
     font-size: 2.4em;
   }
@@ -207,7 +206,7 @@ section
   .welcome-hero h1{
     font-size: 3.6;
   }
-}
+} */
 
 .about h2
 {
@@ -218,7 +217,7 @@ section
 .about p
 {
   font-family: 'Jost', sans-serif;
-  font-size: 1rem;
+  font-size: 1.3rem;
 }
 
 footer
@@ -781,7 +780,7 @@ footer h2
 {
   border-radius: 0%;
   border: 1rem;
-  width: 75%;
+  width: 100%;
   height: auto;
   box-shadow: .3rem .3rem .5rem grey;
   padding-bottom: 0rem;
@@ -796,8 +795,9 @@ footer h2
 .service h3
 {
   font-style: normal;
+  font-weight: bold;
   padding-top: 1rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
   width: auto;
   color: black;
   font-family: "Jost", sans-serif;
@@ -808,7 +808,7 @@ footer h2
 {
   font-style: normal;
   padding-top: 0rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
   width: auto;
   color: black;
   font-family: "Jost", sans-serif;
@@ -942,10 +942,9 @@ footer h2
 
 .livestreams
 {
-  justify-content: center;
-  align-items: center;
   text-align: center;
   background-color: transparent;
+  width: 100%;
 }
 
 .livestreams h2
@@ -953,6 +952,16 @@ footer h2
   background-color: transparent;
   color: black;
   font-size: 3rem;
+  padding-top: 1rem;
+  font-weight: bold;
+  font-family: "Jost", sans-serif;
+}
+
+.livestreams h3
+{
+  background-color: transparent;
+  color: black;
+  font-size: 1.8rem;
   padding-top: 1rem;
   font-weight: bold;
   font-family: "Jost", sans-serif;
@@ -968,26 +977,56 @@ footer h2
   font-family: "Jost", sans-serif;
 }
 
-.livestreams img
+.livestreams-container
 {
-  border-radius: 5%;
-  border: .1rem;
-  max-width: 100%;
-  max-height: 100%;
-  box-shadow: .3rem .3rem .5rem grey;
-  transition: transform 0.2s;
-  padding: 0rem;
-  margin: 0rem;
-}
-
-.livestreams img:hover
-{
-  transform: scale(1.05);
+  width: 70%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .livestream-element 
 {
-  margin-right: 2rem;
+  margin-right: 0rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-radius: .5rem;
+  box-shadow: 0 0 .5rem rgba(71, 60, 60, 0.1);
+}
+
+.livestream-element button 
+{
+  padding: .8rem .8rem;
+  margin-bottom: 2rem;
+  margin-top: 0;
+  margin-right: 0;
+  border: .3rem solid black;
+  border-radius: .2rem;
+  font-size: .9rem;
+  font-weight: bold;
+  text-transform: none;
+  color: white;
+  background-color: black;
+  align-content: center;
+  width: auto;
+}
+
+.livestreams i
+{
+  font-size: 1.3rem;
+  padding-left: .3rem;
+}
+
+.livestreams .youtube-icon
+{
+  font-size: 2rem;
+  color: red;
+}
+
+.livestreams .facebook-icon
+{
+  font-size: 2rem;
+  color: blue;
 }
 
 .social-media h2
@@ -1000,7 +1039,6 @@ footer h2
   font-family: "Jost", sans-serif;
   justify-content: center;
   align-items: center;
-  
 }
 
 .social-media h4
