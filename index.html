@@ -9,7 +9,7 @@ User validate newsletter enteres
 
 <head>
 	<meta charset="UTF-8">
-	<title>RCCG Dominion Chapel, Galloway, NJ</title>
+	<title>Welcome - RCCG Dominion Chapel, Galloway, NJ</title>
 	<meta name="viewport" content="width=device-width" initial-scale="1.0">
 	<meta name="theme-color" content="#000000" />
 	<link rel="stylesheet" href="styles.css">
@@ -22,9 +22,7 @@ User validate newsletter enteres
 		crossorigin="anonymous"></script>
 	<script src="https://unpkg.com/htmx.org@1.8.5"></script>
 
-	<!-- <script src="church-website.js"></script> -->
-
-<body onload="current_year.js">
+	<body onload="current_year.js">
 	<!-- <script src="parallax-effect.js"></script> -->
 	<!-- <script src="loading-screen.js"></script> -->
 	</head>
@@ -32,74 +30,94 @@ User validate newsletter enteres
 	<body>
 		<header>
 			<!-- <div id="loading-screen">Loading...</div> ENABLE WHEN DONE EDITING-->
-			<nav class="navbar navbar-expand-lg" id="navbar">
-				<div class="container">
-					<a class="navbar-brand" href="#navbar">
-						<img src="images/official_logo_2.png" alt="Logo">
-					</a>
-
-					<div class="collapse navbar-collapse" id="navbarSupportedContent">
-						<ul class="navbar-nav">
-							<li class="nav-item">
-								<a class="nav-link" href="#navbar">HOME</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#about">ABOUT</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#services">SERVICES</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#livestreams">LIVESTREAMS</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#giving">GIVE</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" href="#contact">CONTACT</a>
-							</li>
-						</ul>
-					</div>
-
-					<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-						data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-						aria-expanded="false" aria-label="Toggle navigation">
-						<span class="navbar-toggler-icon"></span>
-					</button>
-				</div>
-			</nav>
 		</header>
 		<main>
 			<section class="welcome-hero">
-				<div class="position: relative; text-center">
-					<h1 class="fw-bold">WELCOME TO DOMINION CHAPEL!</h1>
-					<button onclick="location.href='#contact'" type="button">Join Our Newsletter</button>
-					<button onclick="location.href='#services'" type="button">Our Services</button>
-					<p>We're happy you came!</p>
+				<nav class="navbar navbar-expand-lg" id="navbar">
+					<div class="container">
+						<!-- <a class="navbar-brand" href="#navbar">
+							<img src="images/official_logo_2.png" alt="Logo">
+						</a> -->
+	
+						<!-- <div class="collapse navbar-collapse" id="navbarSupportedContent"> -->
+						<div class="navbar-nav">
+							<ul>
+								<li class="nav-item">
+									<a class="nav-link" href="#navbar">Home</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#about">About</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#services">Services</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#livestreams">Livestreams</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#giving">Give</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="#contact">Contact</a>
+								</li>
+							</ul>
+						</div>
+	
+						<!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+							data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+							aria-expanded="false" aria-label="Toggle navigation">
+							<span class="navbar-toggler-icon"></span>
+						</button> -->
+					</div>
+				</nav>
+				<div>
+					<video autoplay muted loop playsinline class="background-video">
+						<source src="videos/rccgdcnj-welcome-hero - Made with Clipchamp.mp4" type="video/mp4">
+						Your browser does not support the video tag.
+					</video>
+
+					<h1 class="fw-bold">Welcome to <span class="highlight">RCCG Dominion Chapel Galloway, NJ</span></h1>
+					<h2>A community dedicated to sharing God's love and grace!</h2>
+					<button class="welcome-hero-newsletter-button" onclick="location.href='#contact'" type="button">
+						<i class="far fa-envelope"></i>
+						Join Our Newsletter
+					</button>
+					<button class="welcome-hero-join-us-button last-section" onclick="location.href='#contact'"
+						type="button">
+						Join Us This Sunday
+						<i class="fas fa-angle-right"></i>
+					</button>
 				</div>
 			</section>
 
-			<section class="about d-flex flex-column align-items-center py-5" id="about">
-				<h2 class="mt-5 mb-4 fw-bold">Who Are We?</h2>
-				<p class="text-center lead">This is a faith community dedicated to spreading the love and teachings of
-					Jesus Christ. We are a vibrant and inclusive congregation located in Galloway, NJ, and
-					we strive to make a positive impact in our community and beyond.</p>
-				<p class="text-center lead mb-5">If you are looking for a place to grow in your faith, connect with God and
-					others, and make a positive impact in the world, we invite you to join us at Dominion Chapel.
-					Regardless of where you are on your spiritual journey, you are welcome here. We look forward to
-					getting to know you and walking alongside you on your faith journey.</p>
+			<!--HAVE A COUNTDOWN TO LIVESTREAM SECTION WITH A YOUTUBE AND FACEBOOK LINK FOR LIVESTREAM-->
+
+			<section class="about" id="about">
+				<h2 class="mb-4 fw-bold">Who Are We?</h2>
+				<p>This is a faith community whose mission is spreading the love and teachings of Jesus Christ.
+					Founded in 1999, we have remained a vibrant and inclusive congregation that strives to impact our
+					community and beyond positively.</p>
+				<p class="mb-4">If you are looking for a place to grow in your faith, connect with God and
+					others, and make a positive impact in the world, we invite you to join us at Dominion Chapel,
+					regardless of where you are on your spiritual journey.</p>
+				<button class="mb-4" onclick="location.href='#pastors'" type="button">
+					<i class="icon fas fa-users"></i>
+					Meet Our Team
+				</button>
+				<img class="mt-4" src="images/pexels-chad-kirchoff-346647-952437.png" alt="People Worshipping">
 			</section>
 
 			<section class="livestreams" id="livestreams">
-				<h2>Join Us Live</h2>
-				<h4>Join us online for live services every Sunday at 12 PM.</h4>
+				<h2>Connect With Us</h2>
+				<h4>Stay up-to-date with our latest sermons, events, and community updates by following us on YouTube
+					and Facebook.</h4>
 				<div class="livestreams-container col">
 					<div class="livestream-element mb-3">
 						<i class="fab fa-youtube youtube-icon"></i>
 						<h3>YouTube Live</h3>
 						<h4>Subscribe to our YouTube channel for high-quality livestreams and archived services.</h4>
 						<a target="_blank" href="https://www.youtube.com/@rccgdominionchapelnj/streams">
-							<button>
+							<button class="youtube-button">
 								Watch on YouTube
 								<i class="fa fa-external-link-alt"></i>
 							</button>
@@ -110,7 +128,7 @@ User validate newsletter enteres
 							style="width: 100%; height: auto; position: absolute; top: 0; left: 0">
 						</iframe> -->
 					</div>
-		
+
 					<div class="livestream-element mb-3">
 						<i class="fab fa-facebook facebook-icon"></i>
 						<h3>Facebook Live</h3>
@@ -122,7 +140,7 @@ User validate newsletter enteres
 							style="width: 100%; height: auto;  position: absolute; top: 0; left: 0;">
 						</iframe> -->
 						<a target="_blank" href="https://www.facebook.com/rccgdominionchapelnj">
-							<button>
+							<button class="facebook-button">
 								Watch on Facebook
 								<i class="fa fa-external-link-alt"></i>
 							</button>
@@ -139,33 +157,38 @@ User validate newsletter enteres
 			<section class="services" id="services">
 				<h2>Our Services</h2>
 				<div class="services-grid">
-					<div class="service">
-						<img src="images/pexels-skitterphoto-597056.png" alt="Sunday Service">
+					<div class="service" id="sunday-service">
+						<img src="images/pexels-jibarofoto-2014775.png" alt="Sunday Service">
 						<h3>Sunday Service</h3>
 						<p>Be a part of our worship services every Sunday at 12 PM, where we gather to praise, reflect,
 							and grow in the faith together.
-							Whether you're new to the area or seeking a spiritual home, we invite you. We look forward
-							to seeing you there!
+						</p>
+					</div>
+					<div class="service">
+						<img src="images/pexels-kampus-6299265.png" alt="Kids Playing">
+						<h3>Youth Ministry</h3>
+						<p>Empowering young people to grow in faith and leadership through fun, engaging activities and
+							weekly lesson.
+							Our goal is to help youth build a strong foundation in Christ while developing lasting
+							life-skills.
 						</p>
 					</div>
 					<div class="service">
 						<img src="images/pexels-johnmark-smith-250609.png" alt="Bible Study">
 						<h3>Bible Study</h3>
-						<p>Dive deeper into the Word with our interactive Bible study sessions, held every Tuesday at 7
-							PM.
-							No matter where you are, you can join us via Zoom for insightful discussions, spiritual
-							growth, and community connection.
-							You can click this link to join:
+						<p>Dive deeper into the Word with our Bible study sessions, held every Tuesday at 7
+							PM via Zoom. For insightful discussions, spiritual growth, and community connection,
+							click this link to join:
 							<a href="https://us02web.zoom.us/j/78916887917" target="_blank">Join via Zoom</a>
 						</p>
 					</div>
 					<div class="service">
 						<img src="images/pexels-tima-miroshnichenko-6860493.png" alt="Prayer Meetings">
-						<h3>Weekly Prayer Meetings</h3>
+						<h3>Prayer Meetings</h3>
 						<p>Start your day with spiritual strength and upliftment at our weekly prayer meetings, held
 							every Monday, Wednesday, and Friday at 5 AM.
 							Join us in prayer from the comfort of your home by dialing <a href="#" class="copy-link"
-								id="copyLink">+1 563 999 1485</a>. We look forward to connecting with you!
+								id="copyLink">+1 563 999 1485</a>.
 						</p>
 					</div>
 					<div class="service">
@@ -174,7 +197,8 @@ User validate newsletter enteres
 						<p>Join us for an inspiring night of worship, reflection, and spiritual renewal
 							at our Night Vigil Services, held every last Friday of the month at 11 PM via telephone.
 							Dial in using the phone code: <a href="#" class="copy-link" id="copyLink">+1 563 999
-								1485</a>. We look forward to seeing you!</p>
+								1485</a>.
+						</p>
 					</div>
 					<div class="service">
 						<img src="images/pexels-olly-3931501.png" alt="Sunday School">
@@ -185,11 +209,11 @@ User validate newsletter enteres
 							journey.
 							Whether you're new to faith or looking to deepen your understanding, our Sunday School
 							offers something
-							for everyone. We can't wait to see you there!</p>
+							for everyone.</p>
 					</div>
 				</div>
 
-				<button class="arrow prev" onclick="moveSlide(-1)">&#10094;</button>
+				<!-- <button class="arrow prev" onclick="moveSlide(-1)">&#10094;</button>
 				<button class="arrow next" onclick="moveSlide(1)">&#10095;</button>
 
 				<div style="text-align:center">
@@ -198,13 +222,13 @@ User validate newsletter enteres
 					<span class="dot" onclick="currentSlide(3)"></span>
 					<span class="dot" onclick="currentSlide(4)"></span>
 					<span class="dot" onclick="currentSlide(5)"></span>
-				</div>
+				</div> -->
 			</section>
 
-			<script src="service-slides.js"></script>
+			<!-- <script src="service-slides.js"></script> -->
 			<script src="copy-to-clipboard.js"></script>
 
-			<section class="social-media">
+			<!-- <section class="social-media">
 				<h2>Connect With Us</h2>
 				<h4>Stay up-to-date with our latest sermons, events, and community updates by following us on YouTube
 					and Facebook.</h4>
@@ -224,7 +248,7 @@ User validate newsletter enteres
 						<p>Connect with our community and stay informed about our latest events and updates.</p>
 					</div>
 				</div>
-			</section>
+			</section> -->
 
 			<section class="pastors">
 				<h2>Our Pastors</h2>
@@ -238,28 +262,28 @@ User validate newsletter enteres
 						<h3>Pastor Moses Gbadebo</h3>
 						<h6>Parish Pastor</h6>
 						<a href="https://www.facebook.com/moses.gbadebo.771" target="_blank">
-							<i class="fab fa-facebook"></i>
+							<i class="facebook-icon fab fa-facebook"></i>
 						</a>
 						<a href="">
-							<i class="fab fa-twitter"></i>
+							<i class="twitter-icon fab fa-twitter"></i>
 						</a>
 						<a href="">
-							<i class="fab fa-instagram"></i>
+							<i class="instagram-icon fab fa-instagram"></i>
 						</a>
 					</div>
 
 					<div class="pastor mb-4 col">
 						<img src="images/2023-05-24 18_39_47-Facebook.png" class="pastor-image">
 						<h3>Pastor Victor Ocasio</h3>
-						<h6>Co-Pastor</h6>
+						<h6>Assistant Pastor</h6>
 						<a href="https://www.facebook.com/profile.php?id=100011345980889" target="_blank">
-							<i class="fab fa-facebook"></i>
+							<i class="facebook-icon fab fa-facebook"></i>
 						</a>
 						<a href="">
-							<i class="fab fa-twitter"></i>
+							<i class="twitter-icon fab fa-twitter"></i>
 						</a>
 						<a href="">
-							<i class="fab fa-instagram"></i>
+							<i class="instagram-icon fab fa-instagram"></i>
 						</a>
 					</div>
 
@@ -267,15 +291,15 @@ User validate newsletter enteres
 						<img src="images/2023-05-24 18_20_19-14668898677466150971684878266601.png - paint.net 5.0.3.png"
 							class="pastor-image">
 						<h3>Pastor Beatrice Gbadebo</h3>
-						<h6>Co-Pastor</h6>
+						<h6>Assistant Pastor</h6>
 						<a href="https://www.facebook.com/profile.php?id=100008035187135" target="_blank">
-							<i class="fab fa-facebook"></i>
+							<i class="facebook-icon fab fa-facebook"></i>
 						</a>
 						<a href="">
-							<i class="fab fa-twitter"></i>
+							<i class="twitter-icon fab fa-twitter"></i>
 						</a>
 						<a href="">
-							<i class="fab fa-instagram"></i>
+							<i class="instagram-icon fab fa-instagram"></i>
 						</a>
 					</div>
 				</div>
@@ -283,37 +307,55 @@ User validate newsletter enteres
 
 			<section class="giving" id="giving">
 				<h2>Ways To Give</h2>
-				<h4>Your generous contributions play a vital role in supporting our church and its missions.
-					Through your giving, we are able to fund various outreach programs, community services,
-					and maintain our place of worship. We are deeply grateful for your support and commitment
-					to our shared mission. Together, we can continue to make a positive impact
-					and spread the message of love and hope. Thank you for your kindness and generosity.</h4>
+				<h4 class="mb-5">
+					Through your giving, we can fund various outreach programs, and community services, and maintain our
+					place of worship.
+					Together, we can continue positively impacting and spreading the gospel. Thank you for your kindness
+					and generosity.
+				</h4>
 
-				<div class="giving-grid row">
+				<div class="giving-grid col">
 					<div class="give col">
-						<a href="https://www.zellepay.com/get-started">
-							<i class="icon fas fa-money-bill-wave"></i>
-							1 - Zelle
-						</a>
-
-						<h4>Step 1</h4>
-						<h5>Find Zelle in your banking app or enter your bank's name in the link above</h5>
-						<h4>Step 2</h4>
-						<h5>Enter the number (609) 630-3223 as the recipient</h5>
-						<h4>Step 3</h4>
-						<h5>Enter the amount you want to send</h5>
-						<h4>Step 4</h4>
-						<h5>Click "Send"</h5>
+						<i class="icon zelle-icon fas fa-wallet"></i>
+						<h3>Give with Zelle</h3>
+						<h6 class="mb-5">Fast, secure, and free</h6>
+						<h5 class="mt-5 mb-5">Send your gift directly from your bank account using Zelle. It's quick,
+							secure, and there are no fees for you or the church.</h5>
+						<button class="mt-5 zelle-button" id="externalLinkButton">
+							Send via Zelle
+						</button>
+						<h5 class="fw-normal">Use our Zelle number: (609) 630-3223</h5>
 					</div>
 
 					<div class="give col">
-						<h3>2 - In the Church</h3>
+						<i class="icon mobile-icon fas fa-mobile-alt"></i>
+						<h3>Text-to-Give</h3>
+						<h6 class="mb-5">Simple and fast mobile giving</h6>
+						<h5 class="mt-5 mb-5">Text any amount to our dedicated giving number to make a quick and easy
+							one-time or recurring donation.</h5>
+						<button class="mt-5 mobile-donate-button" type="button">
+							Text DCNJGIVE to 53-555
+						</button>
 					</div>
 
 					<div class="give col">
-						<h3>3 - Via a Check to RCCG Dominion Chapel, Galloway, NJ</h3>
+						<i class="icon service-icon fas fa-church"></i>
+						<h3>In Person</h3>
+						<h6 class="mb-5">Cash or check donations</h6>
+						<h5 class="mt-5 mb-5">Give during our services or at the church office. We welcome both cash and
+							check donations.</h5>
+						<button class="mt-5 service-times-button" onclick="location.href='#services'" type="button">
+							View Service Times
+						</button>
+						<h5 class="fw-normal">Office hours: Mon-Fri, 9am-5pm</h5>
 					</div>
 				</div>
+
+				<script>
+					document.getElementById('externalLinkButton').addEventListener('click', function () {
+						window.open('https://www.zellepay.com/how-it-works', '_blank');
+					});
+				</script>
 			</section>
 		</main>
 
@@ -327,13 +369,13 @@ User validate newsletter enteres
 					</blockquote>
 					<div class="navbar-icons col">
 						<a href="https://www.facebook.com/rccgdominionchapelnj/" target="_blank">
-							<i class="fab fa-facebook"></i>
+							<i class="facebook-icon fab fa-facebook"></i>
 						</a>
 						<a href="https://www.youtube.com/@rccgdominionchapelnj" target="_blank">
-							<i class="fab fa-youtube"></i>
+							<i class="youtube-icon fab fa-youtube"></i>
 						</a>
-						<i class="fab fa-twitter"></i>
-						<i class="fab fa-instagram"></i>
+						<i class="twitter-icon fab fa-twitter"></i>
+						<i class="instagram-icon fab fa-instagram"></i>
 					</div>
 				</div>
 
@@ -377,7 +419,8 @@ User validate newsletter enteres
 							<i class="fas fa-envelope"></i> rccggalloway@gmail.com
 						</a>
 					</div>
-					<a target="_blank" href="https://www.google.com/maps/dir/39.7049856,-75.12064/rccg+dominion+chapel+galloway+nj/@39.5650522,-75.4600332,9z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x89c0e5ec1579dcf3:0xc67df2cb160f53e5!2m2!1d-74.4806106!2d39.4384699?entry=ttu&g_ep=EgoyMDI0MDkwMi4xIKXMDSoASAFQAw%3D%3D">
+					<a target="_blank"
+						href="https://www.google.com/maps/dir/39.7049856,-75.12064/rccg+dominion+chapel+galloway+nj/@39.5650522,-75.4600332,9z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x89c0e5ec1579dcf3:0xc67df2cb160f53e5!2m2!1d-74.4806106!2d39.4384699?entry=ttu&g_ep=EgoyMDI0MDkwMi4xIKXMDSoASAFQAw%3D%3D">
 						<button>
 							<i class="fa fa-map-marker-alt"></i>
 							Find us on the Map
@@ -410,4 +453,5 @@ User validate newsletter enteres
 			</div>
 		</footer>
 	</body>
+
 </html>
