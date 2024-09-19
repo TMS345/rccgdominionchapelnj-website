@@ -231,14 +231,111 @@ section
   margin-bottom: 15rem;
 }
 
+.countdown
+{
+  background-color: rgb(19, 19, 19);
+  width: 100%;
+}
+
+.countdown h3
+{
+  font-family: 'Jost', sans-serif;
+  font-size: 2.5rem;
+  margin-top: 10rem;
+  margin-bottom: 3rem;
+  color: white;
+}
+
+.countdown a
+{
+  text-decoration: none;
+  text-align: center;
+}
+
+.countdown button
+{
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  padding-right: 3rem;
+  padding-left: 3rem;
+  margin-bottom: 2rem;
+  margin-top: 0;
+  margin-right: 0;
+  color: black;
+  background-color: white;
+  border: .5rem solid white;
+  border-radius: .2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: none;
+  width: auto;
+}
+
+.countdown .youtube-countdown-button:hover
+{
+  box-shadow: 0px 2px 6px rgba(255, 0, 0, 1);
+}
+
+.countdown .facebook-countdown-button:hover
+{
+  box-shadow: 0px 2px 6px rgba(59, 89, 152, 1);
+}
+
+@media (max-width: 480px) {
+  .countdown button {
+    padding-top: .3rem;
+    padding-bottom: .3rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+.countdown .button-container
+{
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 10rem;
+}
+
+.countdown .countdown-timer
+{
+  text-align: center;
+  margin-bottom: 3rem;
+  color: white;
+  font-family: 'Jost', sans-serif;
+  font-size: 5rem;
+  color: white;
+  border-radius: .5rem;
+  background: linear-gradient(
+    to bottom right,
+    rgba(139, 92, 246, 1), /* Purple-600 in RGBA */
+    rgba(59, 130, 246, 1)  /* Blue-500 in RGBA */
+  );
+  box-shadow: 0px 2px 6px rgba(139, 92, 246, 1);
+}
+
+@media (max-width: 480px) {
+  .countdown .countdown-timer {
+    font-size: 3rem;
+  }
+  .countdown h3 {
+    font-size: 2rem;
+  }
+}
+
 .about
 {
   background-color: white;
   width: 100%;
-  justify-content: space-between;
-  display: column;
+  display: flex;
   border-radius: 10px;
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.about .about-content
+{
+  display: column;
 }
 
 .about h2
@@ -247,7 +344,7 @@ section
   font-size: 2.5rem;
   margin-top: 5rem;
   text-align: left;
-  width: 75%;
+  width: 100%;
 }
 
 .about p
@@ -256,14 +353,15 @@ section
   font-size: 1.3rem;
   text-align: left;
   font-weight: normal;
-  width: 75%;
+  width: 100%;
 }
 
 .about img
 {
+  margin-top: 5rem;
   border-radius: 0%;
   border: 1rem;
-  width: 75%;
+  width: 60%;
   height: auto;
   box-shadow: .3rem .3rem .5rem grey;
   padding-bottom: 0;
@@ -271,7 +369,6 @@ section
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 5rem;
-  margin-top: 0;
 }
 
 .about button 
@@ -299,6 +396,20 @@ section
   font-size: 1rem;
   padding-left: 0;
   padding-top: 0;
+}
+
+@media (max-width: 1025px) {
+  .about img {
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the content horizontally */
+    text-align: center; /* Centers the text */
+  }
 }
 
 footer

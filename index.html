@@ -91,21 +91,44 @@ User validate newsletter enteres
 				</div>
 			</section>
 
-			<!--HAVE A COUNTDOWN TO LIVESTREAM SECTION WITH A YOUTUBE AND FACEBOOK LINK FOR LIVESTREAM-->
+			<section class="countdown">
+				<h3>Next service starts in...</h3>
+				<div class="countdown-timer" id="countdown-timer"></div>
+
+				<div class="button-container">
+					<a target="_blank" href="https://www.youtube.com/@rccgdominionchapelnj/streams">
+						<button class="youtube-countdown-button">
+							Join YouTube Livestream
+							<i class="fa fa-external-link-alt"></i>
+						</button>
+					</a>
+					<a target="_blank" href="https://www.facebook.com/rccgdominionchapelnj">
+						<button class="facebook-countdown-button">
+							Join Facebook Livestream
+							<i class="fa fa-external-link-alt"></i>
+						</button>
+					</a>
+				</div>
+			</section>
+
+			<script src="countdown.js"></script>
 
 			<section class="about" id="about">
-				<h2 class="mb-4 fw-bold">Who Are We?</h2>
-				<p>This is a faith community whose mission is spreading the love and teachings of Jesus Christ.
-					Founded in 1999, we have remained a vibrant and inclusive congregation that strives to impact our
-					community and beyond positively.</p>
-				<p class="mb-4">If you are looking for a place to grow in your faith, connect with God and
-					others, and make a positive impact in the world, we invite you to join us at Dominion Chapel,
-					regardless of where you are on your spiritual journey.</p>
-				<button class="mb-4" onclick="location.href='#pastors'" type="button">
-					<i class="icon fas fa-users"></i>
-					Meet Our Team
-				</button>
-				<img class="mt-4" src="images/pexels-chad-kirchoff-346647-952437.png" alt="People Worshipping">
+				<div class="about-content">
+					<h2 class="mb-4 fw-bold">Who Are We?</h2>
+					<p>This is a faith community whose mission is spreading the love and teachings of Jesus Christ.
+						Founded in 1999, we have remained a vibrant and inclusive congregation that strives to impact our
+						community and beyond positively.</p>
+					<p class="mb-4">If you are looking for a place to grow in your faith, connect with God and
+						others, and make a positive impact in the world, we invite you to join us at Dominion Chapel,
+						regardless of where you are on your spiritual journey.</p>
+					<button class="mb-0" onclick="location.href='#pastors'" type="button">
+						<i class="icon fas fa-users"></i>
+						Meet Our Team
+					</button>
+				</div>
+				
+				<img src="images/pexels-chad-kirchoff-346647-952437.png" alt="People Worshipping">
 			</section>
 
 			<section class="livestreams" id="livestreams">
@@ -119,7 +142,7 @@ User validate newsletter enteres
 						<h4>Subscribe to our YouTube channel for high-quality livestreams and archived services.</h4>
 						<a target="_blank" href="https://www.youtube.com/@rccgdominionchapelnj/streams">
 							<button class="youtube-button">
-								Watch on YouTube
+								Our YouTube
 								<i class="fa fa-external-link-alt"></i>
 							</button>
 						</a>
@@ -142,7 +165,7 @@ User validate newsletter enteres
 						</iframe> -->
 						<a target="_blank" href="https://www.facebook.com/rccgdominionchapelnj">
 							<button class="facebook-button">
-								Watch on Facebook
+								Our Facebook
 								<i class="fa fa-external-link-alt"></i>
 							</button>
 						</a>
