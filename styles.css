@@ -100,18 +100,19 @@ body
   height: auto;
   text-align: center;
   align-items: center;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0;
+  padding: 0;
   overflow-x: hidden;
 }
 
 section 
 {
   width: 100%;
-  margin: 0 0;
-  padding: 2rem;
+  margin: 0;
+  padding: 0;
   background-color: transparent;
-  box-shadow: 0 0 .5rem rgba(0, 0, 0, 0.1);
+  box-shadow: none;
+  border-radius: none;
   height: auto;
 }
 
@@ -233,17 +234,17 @@ section
 
 .countdown
 {
-  background-color: rgb(19, 19, 19);
+  background-color: transparent;
   width: 100%;
 }
 
 .countdown h3
 {
+  padding-top: 10rem;
   font-family: 'Jost', sans-serif;
   font-size: 2.5rem;
-  margin-top: 10rem;
   margin-bottom: 3rem;
-  color: white;
+  color: black;
 }
 
 .countdown a
@@ -261,23 +262,26 @@ section
   margin-bottom: 2rem;
   margin-top: 0;
   margin-right: 0;
-  color: black;
-  background-color: white;
-  border: .5rem solid white;
+  color: white;
+  background-color: black;
+  border: .5rem solid black;
   border-radius: .2rem;
   font-size: 1rem;
   font-weight: 500;
   text-transform: none;
   width: auto;
+  transition: box-shadow .2s ease-in-out;
 }
 
 .countdown .youtube-countdown-button:hover
 {
+  transition: box-shadow .2s ease-in-out;
   box-shadow: 0px 2px 6px rgba(255, 0, 0, 1);
 }
 
 .countdown .facebook-countdown-button:hover
 {
+  transition: box-shadow .2s ease-in-out;
   box-shadow: 0px 2px 6px rgba(59, 89, 152, 1);
 }
 
@@ -295,7 +299,7 @@ section
   display: flex;
   justify-content: center;
   gap: 1rem;
-  margin-bottom: 10rem;
+  padding-bottom: 10rem;
 }
 
 .countdown .countdown-timer
@@ -327,10 +331,14 @@ section
 .about
 {
   background-color: white;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  padding-top: 0;
+  padding-bottom: 10rem;
   width: 100%;
   display: flex;
   border-radius: 10px;
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: none;
 }
 
 .about .about-content
@@ -342,7 +350,7 @@ section
 {
   font-family: 'Jost', sans-serif;
   font-size: 2.5rem;
-  margin-top: 5rem;
+  padding-top: 0;
   text-align: left;
   width: 100%;
 }
@@ -357,18 +365,16 @@ section
 }
 
 .about img
-{
-  margin-top: 5rem;
+{ 
   border-radius: 0%;
   border: 1rem;
   width: 60%;
   height: auto;
   box-shadow: .3rem .3rem .5rem grey;
-  padding-bottom: 0;
   padding-top: 0;
   margin-right: auto;
   margin-left: auto;
-  margin-bottom: 5rem;
+  padding-bottom: 0;
 }
 
 .about button 
@@ -388,6 +394,12 @@ section
   align-content: center;
   width: auto;
   display: flex;
+  transition: box-shadow .2s ease-in-out;
+}
+
+.about button:hover 
+{
+  box-shadow: 0px 4px 10px rgba(184, 134, 11, 1);
 }
 
 .about .icon
@@ -402,7 +414,6 @@ section
   .about img {
     width: 100%;
     margin-top: 2rem;
-    margin-bottom: 5rem;
   }
   .about {
     display: flex;
@@ -415,7 +426,7 @@ section
 footer
 {
   height: auto;
-  max-width: 100%;
+  width: 100%;
   padding: 0;
   margin: 0;
   border: none;
@@ -437,6 +448,7 @@ footer h2
   background-color: transparent;
   box-shadow: transparent;
   border: none;
+  padding-top: 1rem;
 }
 
 .contact textarea
@@ -476,16 +488,12 @@ footer h2
   align-content: center;
   width: 25%;
   flex-wrap: wrap;
+  transition: box-shadow .2s ease-in-out;
 }
 
 .contact-section form button:hover 
 {
-  transition: box-shadow 1s ease-in-out;
-  transform: scale(1);
-  cursor: pointer;
-  color: black;
-  background-color: whitesmoke;
-  border: .3rem solid whitesmoke;
+  box-shadow: 0px 4px 10px wheat;
 }
 
 .contact .contact-section h2
@@ -616,16 +624,12 @@ footer h2
   align-content: center;
   width: 25%;
   flex-wrap: wrap;
+  transition: box-shadow .2s ease-in-out;
 }
 
 .contact-section a button:hover 
 {
-  transition: box-shadow 1s ease-in-out;
-  transform: scale(1);
-  cursor: pointer;
-  color: black;
-  background-color: rgba(240, 240, 240, 1);;
-  border: .3rem solid rgba(240, 240, 240, 1);;
+  box-shadow: 0px 4px 10px wheat;
 }
 
 .contact-section ul
@@ -708,6 +712,7 @@ footer h2
 {
   background-color: white;
   font-family: 'Jost', sans-serif;
+  padding-bottom: 10rem;
 }
 
 .pastors h2
@@ -858,6 +863,7 @@ footer h2
 {
   background-color: transparent;
   font-family: 'Jost', sans-serif;
+  padding-bottom: 10rem;
 }
 
 .giving h2
@@ -1076,7 +1082,8 @@ footer h2
   width: 100%;
   overflow: visible;
   margin: 0;
-  padding: 0;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
   background-color: white;
 }
 
@@ -1086,7 +1093,6 @@ footer h2
   color: black;
   padding-top: 1rem;
   padding-bottom: 1rem;
-  margin-bottom: 1rem;
   font-weight: bold;
   font-family: "Jost", sans-serif;
 }
@@ -1099,7 +1105,7 @@ footer h2
   grid-template-rows: repeat(2, 1fr);
   gap: 0;
   width: 100%;
-  margin: 1rem;
+  margin-left: 1rem;
   padding: 0;
 }
 
@@ -1108,8 +1114,6 @@ footer h2
   background-color: rgb(255, 254, 251);
   position: relative;
   text-align: center;
-  padding-left: .2rem;
-  padding-right: .2rem;
   padding-top: 0;
   padding-bottom: 0;
   margin-bottom: 1rem;
@@ -1168,6 +1172,18 @@ footer h2
   text-align: left;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (max-width: 900px) {
+  .service h3 {
+    font-size: 1.3rem;
+  }
+  .service p {
+    font-size: .9rem;
+  }
+  .services-grid {
+    margin-left: .4rem;  
+  }
 }
 
 .copy-link
