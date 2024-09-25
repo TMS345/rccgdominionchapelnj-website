@@ -243,7 +243,7 @@ section
   padding-top: 10rem;
   font-family: 'Jost', sans-serif;
   font-size: 2.5rem;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
   color: black;
 }
 
@@ -305,7 +305,7 @@ section
 .countdown .countdown-timer
 {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
   color: white;
   font-family: 'Jost', sans-serif;
   font-size: 5rem;
@@ -1084,6 +1084,7 @@ footer h2
   margin: 0;
   padding-top: 10rem;
   padding-bottom: 10rem;
+  margin-bottom: 0;
   background-color: white;
 }
 
@@ -1102,7 +1103,7 @@ footer h2
   display: grid;
   transition: transform 0.5s ease-in-out;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 0fr);
   gap: 0;
   width: 100%;
   margin-left: 1rem;
@@ -1117,30 +1118,31 @@ footer h2
   padding-top: 0;
   padding-bottom: 0;
   margin-bottom: 1rem;
-  border-radius: 5%;
+  border-radius: 0;
   width: 95%;
   height: auto;
   opacity: 1;
-  box-shadow: 0 0 .5rem rgba(71, 60, 60, 0.1);
+  box-shadow: 0 0 1rem rgba(71, 60, 60, 0.1);
   transition: transform 0.3s ease-in-out;
 }
 
 .service:hover
 {
-  transform: scale(1.05);
+  transform: scale(1.03);
   transition: transform 0.3s ease-in-out;
   box-shadow: 0 0 2rem rgba(71, 60, 60, 0.1);
 }
 
 .service img
 {
-  border-radius: 5%;
+  border-radius: 0;
   border: 1rem;
   width: 100%;
   height: auto;
   box-shadow: .3rem .3rem .5rem grey;
   padding-bottom: 0rem;
   padding-top: 0rem;
+  opacity: 1;
 }
 
 .service h3
@@ -1148,15 +1150,15 @@ footer h2
   font-style: normal;
   font-weight: bold;
   padding-top: 1rem;
-  font-size: 1.8rem;
+  font-size: 2rem;
   width: auto;
-  color: inherit;
+  color: black;
   font-family: "Jost", sans-serif;
-  position: relative;
   width: 100%;
   text-align: left;
   margin-left: auto;
   margin-right: auto;
+
 }
 
 .service p
@@ -1165,9 +1167,8 @@ footer h2
   padding-top: 0rem;
   font-size: 1.3rem;
   width: auto;
-  color: inherit;
+  color: black;
   font-family: "Jost", sans-serif;
-  position: relative;
   width: 100%;
   text-align: left;
   margin-left: auto;
@@ -1301,25 +1302,25 @@ footer h2
   font-size: 1.2rem;
 }
 
-@media (max-width: 480px) {
-  .navbar-nav .nav-item .nav-link {
-    font-size: .8rem; /* Smallest font size for mobile devices */
-  }
-}
-
 .navbar-nav .nav-item .nav-link:hover
 {
   border: none;
-  /* color: rgba(102, 76, 8, 1); */
-  /* text-decoration: underline rgba(200, 110, 20, 1); */
+  color: rgba(102, 76, 8, 1);
+  text-decoration: underline rgba(200, 110, 20, 1);
   color: wheat;
-  text-decoration: underline rgba(184, 134, 11, 1);
+  /* text-decoration: underline rgba(184, 134, 11, 1); */
   text-underline-offset: 1rem;
 }
 
 .navbar-nav .nav-item .nav-link:last-child 
 {
   margin-right: 0;
+}
+
+@media (max-width: 480px) {
+  .navbar-nav .nav-item .nav-link {
+    font-size: .8rem;
+  }
 }
 
 /* 
@@ -1360,7 +1361,7 @@ footer h2
 .livestreams h3
 {
   background-color: transparent;
-  color: black;
+  color: white;
   font-size: 1.8rem;
   padding-top: 1rem;
   font-weight: bold;
@@ -1377,6 +1378,16 @@ footer h2
   font-family: "Jost", sans-serif;
 }
 
+.livestreams h5
+{
+  font-style: normal;
+  font-weight: normal;
+  color: white;
+  padding: 1rem;
+  font-size: 1.3rem;
+  font-family: "Jost", sans-serif;
+}
+
 .livestreams-container
 {
   width: 70%;
@@ -1385,21 +1396,23 @@ footer h2
   margin-right: auto;
 }
 
-.livestream-element 
+.youtube-livestream-element
 {
   margin-right: 0rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
   border-radius: .5rem;
-  box-shadow: 0 0 .5rem rgba(71, 60, 60, 0.1);
+  /* box-shadow: 0 0 .5rem rgba(71, 60, 60, 0.1); */
+  box-shadow: 0 0 .5rem rgba(255, 0, 0, 1);
   transition: transform 0.3s ease-in-out;
+  background-color: rgba(255, 0, 0, 1);
 }
 
-.livestream-element:hover
+.youtube-livestream-element:hover
 {
   transform: scale(1.05);
   transition: transform 0.3s ease-in-out;
-  box-shadow: 0 0 2rem rgba(71, 60, 60, 0.1);
+  box-shadow: 0 0 1rem rgba(255, 0, 0, 1);
 }
 
 .livestream-element .youtube-button 
@@ -1408,15 +1421,41 @@ footer h2
   margin-bottom: 2rem;
   margin-top: 0;
   margin-right: 0;
-  border: .3rem solid rgba(255, 0, 0, 1);
+  /* border: .3rem solid rgba(255, 0, 0, 1); */
+  border: .3rem solid white;
   border-radius: .2rem;
-  font-size: .9rem;
-  font-weight: bold;
+  font-size: 1rem;
+  font-weight: normal;
   text-transform: none;
-  color: white;
-  background-color: rgba(255, 0, 0, 1);
+  color: rgba(255, 0, 0, 1);
+  /* background-color: rgba(255, 0, 0, 1); */
+  background-color: white;
   align-content: center;
   width: auto;
+}
+
+.livestream-element .youtube-button:hover
+{
+  box-shadow: 0 0 2rem white;
+}
+
+.facebook-livestream-element
+{
+  margin-right: 0rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  border-radius: .5rem;
+  /* box-shadow: 0 0 .5rem rgba(71, 60, 60, 0.1); */
+  box-shadow: 0 0 .5rem rgba(66, 103, 178, 1);
+  transition: transform 0.3s ease-in-out;
+  background-color: rgba(66, 103, 178, 1);
+}
+
+.facebook-livestream-element:hover
+{
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 0 1rem rgba(66, 103, 178, 1);
 }
 
 .livestream-element .facebook-button 
@@ -1425,15 +1464,22 @@ footer h2
   margin-bottom: 2rem;
   margin-top: 0;
   margin-right: 0;
-  border: .3rem solid rgba(66, 103, 178, 1);
+  /* border: .3rem solid rgba(66, 103, 178, 1); */
+  border: .3rem solid white;
   border-radius: .2rem;
-  font-size: .9rem;
-  font-weight: bold;
+  font-size: 1rem;
+  font-weight: normal;
   text-transform: none;
-  color: white;
-  background-color: rgba(66, 103, 178, 1);
+  color: rgba(66, 103, 178, 1);
+  /* background-color: rgba(66, 103, 178, 1); */
+  background-color: white;
   align-content: center;
   width: auto;
+}
+
+.livestream-element .facebook-button:hover
+{
+  box-shadow: 0 0 2rem white;
 }
 
 .livestreams i
@@ -1445,13 +1491,15 @@ footer h2
 .livestreams .youtube-icon
 {
   font-size: 2rem;
-  color: rgba(255, 0, 0, 1);
+  /* color: rgba(255, 0, 0, 1); */
+  color: white;
 }
 
 .livestreams .facebook-icon
 {
   font-size: 2rem;
-  color: rgba(66, 103, 178, 1);
+  /* color: rgba(66, 103, 178, 1); */
+  color: white;
 }
 
 .social-media h2
