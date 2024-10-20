@@ -1,10 +1,15 @@
 function getNextSunday() {
   const now = new Date();
-  // Calculate the difference in days to the next Sunday
-  const daysUntilSunday = 7 - now.getDay(); // Sunday is represented by 0
-  // Create a new date object for next Sunday
-  const nextSunday = new Date(now);
-  nextSunday.setDate(now.getDate() + daysUntilSunday);
+  let nextSunday = new Date();
+
+  if (now.getDay() === 0 && now.getHours() < 15) {
+    // If it's already Sunday, get today!
+    nextSunday = now;
+  } else {
+    // Otherwise, find the next Sunday
+    nextSunday.setDate(now.getDate() + (7 - now.getDay()));
+  }
+
   nextSunday.setHours(12, 0, 0, 0); // Set time to 12 PM
 
   return nextSunday;
