@@ -746,7 +746,8 @@ footer h2
 {
   padding: 20px;
   border-radius: 10px;
-  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1); */
+  box-shadow: 0 0 1rem gray;
   text-align: center;
   background-color: white;
   transition: transform 0.3s ease-in-out;
@@ -756,7 +757,7 @@ footer h2
 {
   transform: scale(1.05);
   transition: transform 0.3s ease-in-out;
-  box-shadow: 0 0 2rem rgba(71, 60, 60, 0.1);
+  box-shadow: 0 0 1rem rgba(200, 110, 20, 1);
 }
 
 .pastor h3
@@ -969,13 +970,24 @@ footer h2
 {
   transform: scale(1.05);
   transition: transform 0.3s ease-in-out;
-  box-shadow: 0 0 2rem rgba(71, 60, 60, 0.1);
+  /* box-shadow: 0 0 2rem rgba(71, 60, 60, 0.1); */
 }
 
 .give .zelle-icon
 {
   color: rgba(84, 40, 154, 1);
 }
+
+.giving-grid #give-zelle
+{
+  box-shadow: 0 0 1rem gray;
+}
+
+.giving-grid #give-zelle:hover
+{
+  box-shadow: 0 0 1rem rgba(84, 40, 154, 1);
+}
+
 
 .give .zelle-button 
 {
@@ -1004,6 +1016,16 @@ footer h2
   color: rgba(255, 219, 88, 1);
 }
 
+.giving-grid #give-text
+{
+  box-shadow: 0 0 1rem gray;
+}
+
+.giving-grid #give-text:hover
+{
+  box-shadow: 0 0 1rem rgba(255, 219, 88, 1);
+}
+
 .give .mobile-donate-button 
 {
   padding: .8rem .8rem;
@@ -1030,6 +1052,16 @@ footer h2
 .give .service-icon
 {
   color: rgba(0, 188, 212, 1);
+}
+
+.giving-grid #give-cash
+{
+  box-shadow: 0 0 1rem gray;
+}
+
+.giving-grid #give-cash:hover
+{
+  box-shadow: 0 0 1rem rgba(0, 188, 212, 1);
 }
 
 .give .service-times-button 
@@ -1118,11 +1150,11 @@ footer h2
   padding-top: 0;
   padding-bottom: 0;
   margin-bottom: 1rem;
-  border-radius: 0;
+  border-radius: 10px;
   width: 95%;
   height: auto;
   opacity: 1;
-  box-shadow: 0 0 1rem rgba(71, 60, 60, 0.1);
+  box-shadow: 0 0 1rem gray;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -1130,7 +1162,7 @@ footer h2
 {
   transform: scale(1.03);
   transition: transform 0.3s ease-in-out;
-  box-shadow: 0 0 2rem rgba(71, 60, 60, 0.1);
+  box-shadow: 0 0 1rem rgba(200, 110, 20, 1);
 }
 
 .service img
@@ -1155,7 +1187,7 @@ footer h2
   color: black;
   font-family: "Jost", sans-serif;
   width: 100%;
-  text-align: left;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
 
@@ -1170,7 +1202,7 @@ footer h2
   color: black;
   font-family: "Jost", sans-serif;
   width: 100%;
-  text-align: left;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
