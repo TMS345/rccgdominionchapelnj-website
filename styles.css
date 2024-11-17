@@ -159,7 +159,7 @@ section
   }
 }
 
-.welcome-hero .highlight
+.welcome-hero .textHighlight
 {
   color: wheat;
 }
@@ -326,6 +326,12 @@ section
   .countdown h3 {
     font-size: 2rem;
   }
+}
+
+button.buttonHighlight {
+  background-color: wheat;
+  box-shadow: 0px 4px 10px wheat;
+  transition: box-shadow 1s ease-in-out;
 }
 
 .about

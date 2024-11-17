@@ -77,13 +77,13 @@ User validate newsletter enteres
 						Your browser does not support the video tag.
 					</video>
 
-					<h1 class="fw-bold">Welcome to <span class="highlight">RCCG Dominion Chapel Galloway, NJ</span></h1>
+					<h1 class="fw-bold">Welcome to <span class="textHighlight">RCCG Dominion Chapel Galloway, NJ</span></h1>
 					<h2>A community dedicated to sharing God's love and grace!</h2>
-					<button class="welcome-hero-newsletter-button" onclick="location.href='#contact'" type="button">
+					<button class="welcome-hero-newsletter-button" id="triggerButton1" onclick="location.href='#contact'" type="button">
 						<i class="far fa-envelope"></i>
 						Join Our Newsletter
 					</button>
-					<button class="welcome-hero-join-us-button last-section" onclick="location.href='#contact'"
+					<button class="welcome-hero-join-us-button last-section" id="triggerButton2" onclick="location.href='#contact'"
 						type="button">
 						Join Us This Sunday
 						<i class="fas fa-angle-right"></i>
@@ -415,7 +415,7 @@ User validate newsletter enteres
 							<br>
 							<input type="email" name="email" placeholder="Email" id="email" required>
 							<br>
-							<button id="newsletterNotification" type="submit">
+							<button id="highlightedButton1" id="newsletterNotification" type="submit">
 								Join Now
 								<i class="fa fa-paper-plane"></i>
 							</button>
@@ -445,7 +445,7 @@ User validate newsletter enteres
 					</div>
 					<a target="_blank"
 						href="https://www.google.com/maps/dir/39.7049856,-75.12064/rccg+dominion+chapel+galloway+nj/@39.5650522,-75.4600332,9z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x89c0e5ec1579dcf3:0xc67df2cb160f53e5!2m2!1d-74.4806106!2d39.4384699?entry=ttu&g_ep=EgoyMDI0MDkwMi4xIKXMDSoASAFQAw%3D%3D">
-						<button>
+						<button id="highlightedButton2">
 							<i class="fa fa-map-marker-alt"></i>
 							Find us on the Map
 							<i class="fa fa-external-link-alt"></i>
@@ -465,6 +465,8 @@ User validate newsletter enteres
 					</ul>
 				</div>
 			</section>
+
+			<script src="button_highlight.js"></script>
 
 			<hr style="border: 1px solid white; margin: 1rem;">
 
