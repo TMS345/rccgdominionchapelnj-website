@@ -233,9 +233,9 @@ section
 .navbar-nav .nav-item .nav-link:hover
 {
   border: none;
-  color: rgba(102, 76, 8, 1);
-  text-decoration: underline rgba(200, 110, 20, 1);
+  /* color: rgba(102, 76, 8, 1); */
   color: wheat;
+  text-decoration: underline rgba(200, 110, 20, 1);
   /* text-decoration: underline rgba(184, 134, 11, 1); */
   text-underline-offset: 1rem;
 }
@@ -253,8 +253,8 @@ section
 
 .welcome-hero h1
 {
-  position: relative; /* Make text overlay absolute relative to its container */
-  color: black; /* Example text color for contrast */
+  position: relative; 
+  color: black; 
   vertical-align: top;
   font-size: 6em;
   margin-bottom: 1rem;
